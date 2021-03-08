@@ -1,0 +1,18 @@
+// Reset styles
+@import "reset.scss";
+// Import fonts
+@import "fonts.scss";
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+      
+  }
