@@ -427,15 +427,61 @@ body {
         font-size: 20px;
         line-height: 23px;
       }
-      .testimonials__slider__item-article{
+      .testimonials__slider__item-article {
         margin: 17px 72px 106px 73px;
         text-align: left;
       }
     }
   }
-  .testimonials__btn{
+  .testimonials__btn {
     margin-bottom: 100px;
   }
 }
-
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+  .map__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 100px 0 60px 0;
+  }
+  .map__global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .map__global-map {
+      position: absolute;
+    }
+    .map__global-index-alligator {
+      position: absolute;
+      left: 770px;
+      top: 4940px;
+    }
+    .map__global-index-eagle{
+      position: absolute;
+      left: 650px;
+      top: 4910px;
+    }
+    .map__global-index-monkey{
+      position: absolute;
+      left: 1100px;
+      top: 5030px;
+    }.map__global-index-panda{
+      position: absolute;
+      left: 1420px;
+      top: 4930px;
+    }
+  }
+  .map__btn{
+    margin: 533px 0 100px 0;
+  }
+}
 // Main styles end
+
+// Footer styles start
+
+
+// Footer styles ens

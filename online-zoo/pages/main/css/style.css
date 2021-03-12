@@ -735,3 +735,69 @@ body {
 .testimonials .testimonials__btn {
   margin-bottom: 100px;
 }
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+}
+
+.map .map__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 100px 0 60px 0;
+}
+
+.map .map__global {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map .map__global .map__global-map {
+  position: absolute;
+}
+
+.map .map__global .map__global-index-alligator {
+  position: absolute;
+  left: 770px;
+  top: 4940px;
+}
+
+.map .map__global .map__global-index-eagle {
+  position: absolute;
+  left: 650px;
+  top: 4910px;
+}
+
+.map .map__global .map__global-index-monkey {
+  position: absolute;
+  left: 1100px;
+  top: 5030px;
+}
+
+.map .map__global .map__global-index-panda {
+  position: absolute;
+  left: 1420px;
+  top: 4930px;
+}
+
+.map .map__btn {
+  margin: 533px 0 100px 0;
+}
