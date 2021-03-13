@@ -144,7 +144,28 @@ body {
 
 // Header styles start
 .header {
-  width: 1920px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 50;
+}
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fefefe;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__wrapper {
@@ -152,13 +173,16 @@ body {
   margin: 0 auto;
   .header__logo {
     margin: 26px 0 26px 0;
+    position: relative;
+    z-index: 3;
   }
-  display: flex;
-  justify-content: space-between;
   .header__nav {
-    margin-top: 37px;
+    margin: 0 275px 0 0;
+
     .header__list {
       display: flex;
+      position: relative;
+      z-index: 3;
       .header__item {
         margin-right: 122px;
         &:last-child {
@@ -178,7 +202,11 @@ body {
     }
   }
   .header__switch__theme {
-    margin-top: 25px;
+    margin-top: 15px;
+    .switcher {
+      position: relative;
+      z-index: 3;
+    }
   }
 }
 // Header styles end
@@ -187,7 +215,7 @@ body {
 
 // Firstscreen styles start
 .firstscreen__wrapper {
-  margin-top: 10px;
+  margin-top: 107px;
   height: 940px;
   background: url(../../../assets/images/first__screen__background__image.png)
     no-repeat;
@@ -487,9 +515,9 @@ body {
     padding-top: 100px;
   }
   .footer__authors {
-    color: #BDBDBD;
+    color: #bdbdbd;
     padding-bottom: 52px;
-    p{
+    p {
       margin-bottom: 5px;
     }
   }
@@ -498,17 +526,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .footer__nav__logo__link{
+  .footer__nav__logo__link {
     margin-right: 600px;
   }
   .footer__nav__list {
     display: flex;
-    .footer__nav__item{
+    .footer__nav__item {
       margin-right: 123px;
-      &:last-child{
+      &:last-child {
         margin: 0;
       }
-      .footer__nav__link{
+      .footer__nav__link {
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
@@ -518,14 +546,14 @@ body {
       }
     }
   }
-  .footer__nav__btn{
+  .footer__nav__btn {
     width: 275px;
   }
 }
 .footer__bottomside {
   display: flex;
   margin: 57px 0 28px 0;
-  border-bottom: 0.5px solid #FEFEFE;
+  border-bottom: 0.5px solid #fefefe;
   padding-bottom: 100px;
   .footer__contact-us {
     display: flex;
@@ -564,10 +592,10 @@ body {
       justify-content: start;
       input[type="checkbox"] {
         display: none;
-      }  
+      }
       /* стили для метки */
       label {
-        color: #BDBDBD;
+        color: #bdbdbd;
         cursor: pointer;
         font-weight: normal;
         vertical-align: middle;
@@ -575,7 +603,7 @@ body {
       /* формируем внешний вид чекбокса в псевдоэлементе before */
       label:before {
         content: " ";
-        color: #BDBDBD;
+        color: #bdbdbd;
         display: inline-block;
         margin-right: 6px;
         position: relative;
@@ -596,7 +624,7 @@ body {
         color: #aaa;
       }
     }
-    .footer__contact-us__button{
+    .footer__contact-us__button {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -606,42 +634,131 @@ body {
       border: none;
       font-weight: 500;
       text-transform: uppercase;
-      color: #FEFEFE;
+      color: #fefefe;
       outline: none;
-      &:hover{
+      &:hover {
         cursor: pointer;
-        color: #BDBDBD;
+        color: #bdbdbd;
       }
-      img{
+      img {
         margin-left: 24px;
       }
     }
   }
-  .footer_adress{
+  .footer_adress {
     width: 190px;
     color: #fefefe;
-    .footer_adress__title{
+    .footer_adress__title {
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 35px;
     }
-    .footer_adress__article{
+    .footer_adress__article {
       margin-bottom: 5px;
     }
-    .block-articles{
+    .block-articles {
       margin-bottom: 20px;
     }
   }
-  .footer__adress__social__links__nav{
+  .footer__adress__social__links__nav {
     display: flex;
     align-items: center;
-    .footer__adress__social__links__item{
+    .footer__adress__social__links__item {
       margin-right: 15px;
-      &:last-child{
+      &:last-child {
         margin: 0;
       }
     }
   }
 }
-
 // Footer styles ens
+
+// Media jquery 320px
+@media (max-width: 320px) {
+  body.lock{
+    overflow: hidden;
+  }
+  .header__wrapper {
+    width: 320px;
+    margin: 0 10px;
+    align-items: center;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 21px;
+    position: relative;
+    z-index: 3;
+    margin: 0 26px 0 121px;
+  }
+  .header__burger span {
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:after {
+    content: "";
+    background-color: #333333;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+    width: 33px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+    width: 40px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #bdbdbd;
+    padding: 117px 0 0 0;
+    transition: all 0.3s ease 0s;
+    &.active{
+      top: 0;
+    }
+    .header__list {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 0 0 15px;
+      .header__item{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// Header styles start
+// Header styles end
+
+// Media jquery 320px end

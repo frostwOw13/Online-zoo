@@ -1,3 +1,16 @@
+// Header burger
+const burger = document.querySelector('.header__burger');
+const burgerMenu = document.querySelector('.header__nav');
+const bodyLock = document.querySelector('body');
+
+burger.addEventListener('click', e => {
+    burger.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+    bodyLock.classList.toggle('lock');
+});
+
+
+
 const sliderRange = document.getElementById('range1');
 const currentSlide = document.querySelector('.slider__bottomside-count-current');
 const sliderImage = document.querySelectorAll('.slider__item-image');
