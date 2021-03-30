@@ -196,7 +196,7 @@ sliderRange.oninput = function() {
 };
 
 // Navigation bar first element is active or not
-const navElem = document.querySelector(".header__link_first");
+const navElem = document.getElementById("linkHeader1");
 navElem.addEventListener("mouseover", e => {
     navElem.classList.toggle("active");
 });
@@ -207,10 +207,10 @@ let darkTheme = false; // boolean var to track dark theme;
 
 switcher.addEventListener("click", e => {
     if (darkTheme === false) {
-        switcher.src = "../../assets/images/switcher__theme_dark.png";
+        switcher.src = "assets/images/switcher__theme_dark.png";
         darkTheme = true;
     } else {
-        switcher.src = "../../assets/images/switcher__theme.png";
+        switcher.src = "assets/images/switcher__theme.png";
         darkTheme = false;
     }
 })

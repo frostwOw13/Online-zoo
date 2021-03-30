@@ -1,0 +1,272 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../assets/fonts/roboto-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../../assets/fonts/roboto-v20-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+
+.wrapper__whole__page {
+  margin: 0 auto;
+  width: 1920px;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  z-index: 50;
+  -webkit-box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+          box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fefefe;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__body .header__body__h1_onlinezoo {
+  display: none;
+}
+
+.header__wrapper {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.header__wrapper .header__logo {
+  margin: 26px 465px 26px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.header__wrapper .header__nav {
+  margin: 0 469px 0 0;
+}
+
+.header__wrapper .header__nav .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.header__wrapper .header__nav .header__list .header__item {
+  margin-right: 83px;
+}
+
+.header__wrapper .header__nav .header__list .header__item:last-child {
+  margin: 0;
+}
+
+.header__wrapper .header__nav .header__list .header__item .header__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.header__wrapper .header__nav .header__list .header__item .header__link:hover {
+  font-weight: 900;
+  border-bottom: 1px solid #333333;
+}
+
+.header__wrapper .header__nav .header__list .header__item .header__link.active {
+  font-weight: 900;
+  border-bottom: 1px solid #333333;
+  -webkit-transition: 0.01s all;
+  transition: 0.01s all;
+}
+
+.header__wrapper .header__switch__theme .switcher {
+  position: relative;
+  z-index: 3;
+}
+
+.header__wrapper .header__switch__theme .switcher:hover {
+  cursor: pointer;
+}

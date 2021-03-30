@@ -371,6 +371,8 @@ body {
   left: 0;
   position: relative;
   z-index: 50;
+  -webkit-box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
+          box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 
 .header:before {
