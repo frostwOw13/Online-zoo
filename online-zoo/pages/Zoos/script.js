@@ -17,3 +17,18 @@ switcher.addEventListener("click", e => {
         darkTheme = false;
     }
 })
+
+// Aside script
+const activePet = document.querySelectorAll(".pets-slider__image");
+const arrowUp = document.querySelector(".arrow-up");
+const arrowDown = document.querySelector(".arrow-down");
+
+activePet.forEach((pet, id) => {
+    if (pet.classList.contains("active")) {   // Check which pet have active class
+        if (id === 0) {
+            arrowUp.style.marginBottom = "0";    // Set margin to 0, for good block display
+        } else if (id === 3) {
+            arrowDown.style.marginTop = "0";  // Set margin to 0, for good block display
+        }
+    }
+})

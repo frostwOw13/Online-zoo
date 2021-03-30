@@ -270,3 +270,61 @@ body {
 .header__wrapper .header__switch__theme .switcher:hover {
   cursor: pointer;
 }
+
+.pets-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 209px;
+  padding: 65px 50px 0 20px;
+}
+
+.pets-slider .pets-slider__image {
+  width: 108px;
+  height: 108px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.pets-slider .pets-slider__image.active {
+  width: 137px;
+  height: 137px;
+  margin: 20px 0;
+}
+
+.pets-slider .pets-slider__image.active:after {
+  content: '';
+  background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
+  position: absolute;
+  height: 157px;
+  width: 157px;
+  top: 0;
+  left: 0;
+}
+
+.pets-slider .arrow {
+  width: 23px;
+  margin-left: 20px;
+}
+
+.pets-slider .arrow:hover {
+  opacity: .5;
+}
+
+.pets-slider .arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-bottom: 25px;
+}
+
+.pets-slider .arrow-down {
+  margin-top: 25px;
+}

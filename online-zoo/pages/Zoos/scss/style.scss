@@ -104,3 +104,48 @@ html {
     }
   }
   // Header styles end
+  // Aside styles start
+  .pets-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 209px;
+      padding: 65px 50px 0 20px;
+      .pets-slider__image {
+          width: 108px;
+          height: 108px;
+          margin-bottom: 10px;
+          position: relative;
+          padding: 10px;
+          &.active {
+              width: 137px;
+              height: 137px;
+              margin: 20px 0;
+              &:after {
+                content:'';
+                background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
+                position: absolute;
+                height: 157px;
+                width: 157px;
+                top: 0;
+                left: 0;
+              }
+          }
+      }
+      .arrow {
+          width: 23px;
+          margin-left: 20px;
+          &:hover {
+            opacity: .5;
+          }
+      }
+      .arrow-up {
+          transform: rotate(180deg);
+          margin-bottom: 25px;
+      }
+      .arrow-down {
+          margin-top: 25px;
+      }
+      
+  }
+  // Aside styles end
