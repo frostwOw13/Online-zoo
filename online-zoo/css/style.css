@@ -1137,7 +1137,7 @@ body {
 }
 
 .footer__nav .footer__nav__logo__link {
-  margin-right: 600px;
+  margin-right: 620px;
 }
 
 .footer__nav .footer__nav__list {
@@ -1147,7 +1147,7 @@ body {
 }
 
 .footer__nav .footer__nav__list .footer__nav__item {
-  margin-right: 123px;
+  margin-right: 73px;
 }
 
 .footer__nav .footer__nav__list .footer__nav__item:last-child {
@@ -1171,9 +1171,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 57px 0 28px 0;
+  margin: 54px 0 28px 0;
   border-bottom: 0.5px solid #fefefe;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .footer__bottomside .footer__contact-us {
@@ -1185,7 +1185,28 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #e0e0e0;
-  margin-right: 445px;
+  margin-right: 441px;
+}
+
+.footer__bottomside .footer__contact-us fieldset {
+  border: 1px solid #bdbdbd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  margin-top: 21px;
+}
+
+.footer__bottomside .footer__contact-us fieldset legend {
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer__bottomside .footer__contact-us fieldset textarea {
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 .footer__bottomside .footer__contact-us .footer__contact-us-title {
@@ -1202,7 +1223,7 @@ body {
   padding-right: 203px;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #bdbdbd;
   font-size: 14px;
   outline: none;
   -webkit-transition: border-color 0.4s;
@@ -1231,7 +1252,7 @@ body {
 }
 
 .footer__bottomside .footer__contact-us .checkbox {
-  margin: 20px 0 16px 0;
+  margin: 26px 0 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1242,6 +1263,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  font-size: 12px;
+  line-height: 14px;
   /* стили для метки */
   /* формируем внешний вид чекбокса в псевдоэлементе before */
   /* checked */
@@ -1294,6 +1317,7 @@ body {
           align-items: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-right: 10px;
   width: 108px;
   background: none;
   border: none;
@@ -1328,7 +1352,7 @@ body {
 }
 
 .footer__bottomside .footer_adress .block-articles {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .footer__bottomside .footer__adress__social__links__nav {
@@ -1346,6 +1370,11 @@ body {
 
 .footer__bottomside .footer__adress__social__links__nav .footer__adress__social__links__item:last-child {
   margin: 0;
+}
+
+.footer__authors p {
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (max-width: 320px) {
