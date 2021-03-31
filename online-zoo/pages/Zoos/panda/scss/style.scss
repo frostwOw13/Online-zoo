@@ -1,5 +1,5 @@
-@import "../../../scss/reset.scss";
-@import "../../../scss/fonts.scss";
+@import "../../../../scss/reset.scss";
+@import "../../../../scss/fonts.scss";
 
 html {
   box-sizing: border-box;
@@ -156,7 +156,7 @@ body {
       margin: 20px 0;
       &:after {
         content: "";
-        background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
+        background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
         position: absolute;
         height: 157px;
         width: 157px;
@@ -216,14 +216,14 @@ body {
         .pets-player__watch-switch__item {
           height: 8px;
           width: 8px;
-          background-image: url(../../../assets/images/Zoos/pets-watch-switcher.png);
+          background-image: url(../../../../assets/images/Zoos/pets-watch-switcher.png);
           &:hover { 
             cursor: pointer;
           }
           &.active {
             height: 11px;
             width: 11px;
-            background-image: url(../../../assets/images/Zoos/pets-watch-switcher-active.png);
+            background-image: url(../../../../assets/images/Zoos/pets-watch-switcher-active.png);
           }
         }
       }

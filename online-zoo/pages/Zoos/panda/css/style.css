@@ -346,7 +346,7 @@ body {
 
 .pets-slider .pets-slider__image.active:after {
   content: "";
-  background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
+  background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
   position: absolute;
   height: 157px;
   width: 157px;
@@ -440,7 +440,7 @@ body {
 .pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-switch .pets-player__watch-switch__item {
   height: 8px;
   width: 8px;
-  background-image: url(../../../assets/images/Zoos/pets-watch-switcher.png);
+  background-image: url(../../../../assets/images/Zoos/pets-watch-switcher.png);
 }
 
 .pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-switch .pets-player__watch-switch__item:hover {
@@ -450,7 +450,7 @@ body {
 .pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-switch .pets-player__watch-switch__item.active {
   height: 11px;
   width: 11px;
-  background-image: url(../../../assets/images/Zoos/pets-watch-switcher-active.png);
+  background-image: url(../../../../assets/images/Zoos/pets-watch-switcher-active.png);
 }
 
 .pets-player .pets-player__watch .pets-player__watch-info {
