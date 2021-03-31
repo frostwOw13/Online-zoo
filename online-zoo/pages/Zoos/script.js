@@ -32,3 +32,15 @@ activePet.forEach((pet, id) => {
         }
     }
 })
+
+// Pets player script
+const switchButton = document.querySelectorAll(".pets-player__watch-switch__item");
+
+switchButton.forEach(btn => {
+    btn.addEventListener("click", e => {
+        switchButton.forEach(btn1 => {
+            btn1.classList.remove("active"); // Set all btn to non-active
+        });
+        btn.classList.toggle("active"); // Active clicked btn
+    });
+});
