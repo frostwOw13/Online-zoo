@@ -3,9 +3,9 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../../../assets/fonts/roboto-v20-latin-regular.eot");
+  src: url("../assets/fonts/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  src: local(""), url("../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -14,8 +14,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("../../../assets/fonts/roboto-v20-latin-900.eot");
+  src: url("../assets/fonts/roboto-v20-latin-900.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  src: local(""), url("../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
