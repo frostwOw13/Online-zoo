@@ -205,6 +205,19 @@ body {
         justify-content: space-between;
         width: 790px;
         margin-top: 30px;
+        .pets-player__watch-stub {
+          position: absolute;
+          background-color: black;
+          width: 246px;
+          height: 141px;
+          opacity: 0;
+        }
+        #stub-2 {
+          left: 625px;
+        }
+        #stub-3 {
+          left: 898px;
+        }
       }
       .pets-player__watch-switch {
         margin-top: 30px;

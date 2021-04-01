@@ -422,6 +422,22 @@ body {
   margin-top: 30px;
 }
 
+.pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-slider .pets-player__watch-stub {
+  position: absolute;
+  background-color: black;
+  width: 246px;
+  height: 141px;
+  opacity: 0;
+}
+
+.pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-slider #stub-2 {
+  left: 625px;
+}
+
+.pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-slider #stub-3 {
+  left: 898px;
+}
+
 .pets-player .pets-player__watch .pets-player__watch-section .pets-player__watch-switch {
   margin-top: 30px;
   display: -webkit-box;
