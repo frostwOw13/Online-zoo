@@ -201,7 +201,7 @@ navElem.addEventListener("mouseover", e => {
     navElem.classList.toggle("active");
 });
 
-//Navigation switch theme
+// Navigation switch theme
 const switcher = document.querySelector(".switcher");
 let darkTheme = false; // boolean var to track dark theme;
 
@@ -213,4 +213,4 @@ switcher.addEventListener("click", e => {
         switcher.src = "assets/images/switcher__theme.png";
         darkTheme = false;
     }
-})
+});
