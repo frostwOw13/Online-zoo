@@ -16,6 +16,10 @@ const currentSlide = document.querySelector('.slider__bottomside-count-current')
 const sliderImage = document.querySelectorAll('.slider__item-image');
 const sliderContainer = document.querySelector('.slider__container');
 
+// Link to live broadcast
+const linkToPet = document.getElementById("play-watch-online");
+const textToPet = document.getElementById("slider__item__desc-p");
+
 const addActiveSlide = function(num) {
     sliderImage[num].classList.add('active');
 }
@@ -50,6 +54,8 @@ const slideImage = function (num) {
                     removeActiveSlide(num);
                     prev = 0;
                     hideSlide(num + 3);
+                    textToPet.innerHTML = "Main live prey consists of medium sized mammals and birds such as rabbits";
+                    linkToPet.href = "pages/Zoos/eagle/index.html";
                     break;
                  case 2:
                     if (prev === 0) {
@@ -66,6 +72,8 @@ const slideImage = function (num) {
                         showSlide(num - 2);
                         hideSlide(num + 3);
                     }
+                    textToPet.innerHTML = "Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.";
+                    linkToPet.href = "pages/Zoos/panda/index.html";
                     break;
                 case 3: 
                     if (prev === 2) {
@@ -83,6 +91,8 @@ const slideImage = function (num) {
                         showSlide(num - 2);
                         hideSlide(num + 3);
                     }
+                    textToPet.innerHTML = "Gorillas stick to a mainly vegetarian diet, feeding on stems, bamboo shoots and fruits.";
+                    linkToPet.href = "pages/Zoos/monkey/index.html";
                     break;
                 case 4:
                     if (prev === 3) {
@@ -100,6 +110,8 @@ const slideImage = function (num) {
                         showSlide(num - 2);
                         hideSlide(num + 3);
                     }
+                    textToPet.innerHTML = "Their diets include prey species that are abundant and easily accessible.";
+                    linkToPet.href = "pages/Zoos/alligator/index.html";
                     break;
                 case 5: 
                     if (prev === 4) {
@@ -116,6 +128,8 @@ const slideImage = function (num) {
                         prev = 5;
                         showSlide(num - 2);
                      }
+                     textToPet.innerHTML = "Main live prey consists of medium sized mammals and birds such as rabbits";
+                     linkToPet.href = "pages/Zoos/eagle/index.html";
                      break;
                 case 6: 
                     if (prev === 5) {
@@ -131,6 +145,8 @@ const slideImage = function (num) {
                         prev = 6;
                         showSlide(num - 2);
                      }
+                     textToPet.innerHTML = "Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.";
+                     linkToPet.href = "pages/Zoos/panda/index.html";
                      break;
                 case 7: 
                     if (prev === 6) {
@@ -146,6 +162,8 @@ const slideImage = function (num) {
                         prev = 7;
                         showSlide(num - 2);
                      }
+                     textToPet.innerHTML = "Gorillas stick to a mainly vegetarian diet, feeding on stems, bamboo shoots and fruits.";
+                     linkToPet.href = "pages/Zoos/monkey/index.html";
                      break;
                 case 8: 
                         addActiveSlide(num-1);
@@ -153,6 +171,8 @@ const slideImage = function (num) {
                         removeActiveSlide(num-2);
                         prev = 8;
                         hideSlide(num - 3);
+                        textToPet.innerHTML = "Their diets include prey species that are abundant and easily accessible.";
+                     linkToPet.href = "pages/Zoos/alligator/index.html";
                      break;
             }
         // }

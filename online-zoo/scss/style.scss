@@ -534,9 +534,14 @@ body {
       margin-bottom: 25px;
     }
   }
+  #pets_link_map {
+    text-decoration: none;
+    outline: none;
+  }
   .pets__btn {
     margin-top: -5px;
     margin-bottom: 100px;
+    text-decoration: none;
   }
 }
 .payNfeed {
