@@ -135,9 +135,9 @@ table {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../../../assets/fonts/roboto-v20-latin-regular.eot");
+  src: url("../assets/fonts/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  src: local(""), url("../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -146,9 +146,9 @@ table {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("../../../assets/fonts/roboto-v20-latin-900.eot");
+  src: url("../assets/fonts/roboto-v20-latin-900.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../../../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../../../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  src: local(""), url("../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 
@@ -461,7 +461,7 @@ body {
 
 .firstscreen__wrapper {
   height: 940px;
-  background: url(../../../assets/images/landing/first__screen__background__image.png) no-repeat;
+  background: url(../assets/images/Landing/first__screen__background__image.png) no-repeat;
 }
 
 .social__links__nav {
@@ -827,9 +827,15 @@ body {
   margin-bottom: 25px;
 }
 
+.pets #pets_link_map {
+  text-decoration: none;
+  outline: none;
+}
+
 .pets .pets__btn {
   margin-top: -5px;
   margin-bottom: 100px;
+  text-decoration: none;
 }
 
 .payNfeed {
