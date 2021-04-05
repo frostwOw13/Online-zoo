@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0, 
+    maximum-scale=1.0, 
+    user-scalable=no">
+    <title>Online Zoo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper__whole__page">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__body">
+                    <a href="#" class="header__logo__link">
+                        <img src="../../assets/images/logo-light.png" 
+                             alt="Watch your favorite animal online" 
+                             class="header__logo"></a>
+                    <h1 class="header__body__h1_onlinezoo">Online zoo</h1>
+                
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#!" class="header__link active" 
+                                   id="linkHeader1">About</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="pages/Zoos/panda/index.html" class="header__link" id="linkHeader2">Zoos</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="pages/map/index.html" class="header__link" id="linkHeader3">Map</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#footer" class="header__link">Contact Us</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1" class="header__link">Design</a>
+                            </li>
+                        </ul>
+                    </nav>
+        
+                    <div class="header__switch__theme">
+                        <img src="../../assets/images/switcher__theme.png" alt="Switch to dark theme" class="switcher">
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main class="firstscreen__bg">
+            <div class="firstscreen__wrapper">
+    
+                <figure class="social__links">
+                    <ul class="social__links__nav">
+                        <li class="social__links__item">
+                            <a href="https://www.instagram.com/" class="social__link__link">
+                                <img src="../../assets/images/svg/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social__links__item">
+                            <a href="https://twitter.com/" class="social__link__link">
+                                <img src="../../assets/images/svg/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="social__links__item">
+                            <a href="https://youtube.com/" class="social__link__link">
+                                <img src="../../assets/images/svg/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="social__links__item">
+                            <a href="https://vk.com/" class="social__link__link">
+                                <img src="../../assets/images/svg/vk.svg" alt="vk">
+                            </a>
+                        </li>
+                    </ul>
+                </figure>
+    
+                <article class="container__zoo__main">
+                    <h1 class="main__article">
+                        Watch your favorite animal online
+                    </h1>
+                    <button class="main__article__btn btn">
+                        <img src="../../assets/images/svg/btn-play.svg" 
+                        alt="watch online" 
+                        class="btn__play">
+                        watch online
+                    </button>
+                </article>
+    
+                <aside class="main__slider">
+                    <div class="slider__topside">
+                        
+                        <img src="../../assets/images/landing/firstscreen__gallery/line.png" 
+                        class="main__slider__bar">
+
+                        <div class="slider__wrapper">
+                            <div class="slider__container">
+                            
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/eagle.png" 
+                                    alt="Eagle" 
+                                    class="slider__item-image">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/panda.png" 
+                                    alt="Panda" 
+                                    class="slider__item-image active">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/monkey.png" 
+                                    alt="Monkey" 
+                                    class="slider__item-image">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/alligator.png" 
+                                    alt="Alligator" 
+                                    class="slider__item-image">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/eagle.png" 
+                                    alt="Eagle" 
+                                    class="slider__item-image">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/panda.png" 
+                                    alt="Panda" 
+                                    class="slider__item-image hidden">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/monkey.png" 
+                                    alt="Monkey" 
+                                    class="slider__item-image hidden">
+                                </div>
+                                <div class="slider__item">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/alligator.png" 
+                                    alt="Alligator" 
+                                    class="slider__item-image hidden">
+                                </div>
+                            </div>
+
+                            <div class="slider__item__description">
+                                <p id="slider__item__desc-p">
+                                    Panda’s name is Bei Bei. 
+                                    He is 2 years old. 
+                                    Bei Bei is from China. 
+                                    He loves bamboos.
+                                </p>
+                                <div class="slider__item__description_buttons">
+                                    <a href="pages/Zoos/panda/index.html" id="play-watch-online">
+                                        <img src="../../assets/images/landing/firstscreen__gallery/watchOnlinePlay.png" 
+                                        alt="Watch online">
+                                        watch online
+                                    </a>
+                                    <a href="#!" id="donate-button">
+                                        <span>$</span>Donate
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div class="slider__bottomside slider-light">
+                        <p class="slider__bottomside-count-current">
+                            02/<span>08</span>
+                        </p>
+
+                        <input id="range1" 
+                        type="range" 
+                        value="2" 
+                        max="8" 
+                        min="1" 
+                        class="slider__range light">
+                    </div>
+                    
+                </aside>
+    
+            </div>
+
+            <div class="middle-container">
+                <div class="middle-container__wrapper">
+                    <h2 class="middle-container__title">How it works?</h2>
+                    <p class="middle-container__article">
+                        As a voice for wildlife, we are devastated 
+                        by the impact of the 2020 Australian bushfires 
+                        on precious species and their habitat, and 
+                        we are determined to assist in all aspects, 
+                        including providing veterinary support and 
+                        raising much-needed emergency funds. 
+                        Zoo Online saves wildlife and inspires 
+                        everyone to make conservation a priority in
+                         their lives. Animals have the right to a 
+                         pain-free and happy life. They have equal 
+                         claim to the resources of this planet, 
+                         and deserve a life of dignity and 
+                         compassion.As a voice for wildlife, 
+                         we are devastated by the impact of the 
+                         2020 Australian bushfires on precious 
+                         species and their habitat.</p>
+
+                    <div class="image-crop">
+                        <img src="../../assets/images/landing/Howitworksimg.png" 
+                             alt="How it works?" 
+                             class="middle-container__image">
+                    </div>
+                    
+
+                    <div class="slider-dark_four">
+                        <p class="slider__bottomside-count-current">01/<span>04</span></p>
+
+                        <input id="range2" 
+                               type="range" 
+                               value="1" 
+                               max="4" 
+                               min="1" 
+                               class="slider__range light">
+                    </div>
+
+                    <button class="middle-container__button btn">
+                        <img src="../../assets/images/svg/btn-play.svg" 
+                             alt="watch online" 
+                             class="btn__play">watch online
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="features-item">
+                    <img src="../../assets/icons/landing/features/problem-solving 1.png" 
+                         alt="What inspiring us?" class="features-image">
+                    <h3 class="features-title">What inspires us?</h3>
+                    <p class="features-article">As a voice for wildlife, we 
+                        are devastated by the impact of the 2020 
+                        Australian bushfires on precious species 
+                        and their habitat, and we are determined to 
+                        assist in all aspects.</p>
+                </div>
+                <div class="features-item">
+                    <img src="../../assets/icons/landing/features/achievement 1.png" 
+                         alt="Our mission" class="features-image">
+                    <h3 class="features-title">Our mission</h3>
+                    <p class="features-article">Zoo Online saves wildlife and 
+                        inspires everyone to make conservation a priority in
+                         their lives. </p>
+                </div>
+                <div class="features-item">
+                    <img src="../../assets/icons/landing/features/love 1.png" 
+                         alt="What we believe in?" class="features-image">
+                    <h3 class="features-title">What we believe in?</h3>
+                    <p class="features-article">Animals have the right to a 
+                        pain-free and happy life. They have equal claim to
+                         the resources of this planet, and deserve a life of
+                          dignity and compassion.</p>
+                </div>
+            </div>
+
+            <div class="pets">
+                <h2 class="pets__title">Pets in Zoo</h2>
+                <div class="pets__slider">
+                    <img src="../../assets/icons/landing/vectorSlide.svg" 
+                    alt="Left" 
+                    class="pets__slider-vector leftVector">
+                    <div class="pets__slider__item">
+                        <div class="image__wrapper_opacity">
+                            <img src="../../assets/images/landing/PetsInZoo/panda.png" 
+                            alt="Panda" 
+                            class="pets__slider__item-image">
+                        </div>
+                        
+                        <div class="pets__slider__item__description">
+                            <p>
+                                Panda’s name is Bei Bei. 
+                                He is 2 years old. 
+                                Bei Bei is from China. 
+                                He loves bamboos.
+                            </p>
+                            <div class="slider__item__description_buttons">
+                                <a href="#!" id="play-watch-online">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/watchOnlinePlay.png" 
+                                    alt="Watch online">
+                                    watch online
+                                </a>
+                                <a href="#!" id="donate-button">
+                                    <span>$</span>Donate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pets__slider__item">
+                        <div class="image__wrapper_opacity">
+                            <img src="../../assets/images/landing/PetsInZoo/eagle.png" 
+                            alt="Eagle" 
+                            class="pets__slider__item-image">
+                        </div>
+                        
+                        <div class="pets__slider__item__description">
+                            <p>
+                                Main live prey consists of
+                                medium sized mammals and 
+                                birds such as rabbits
+                            </p>
+                            <div class="slider__item__description_buttons">
+                                <a href="#!" id="play-watch-online">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/watchOnlinePlay.png" 
+                                    alt="Watch online">
+                                    watch online
+                                </a>
+                                <a href="#!" id="donate-button">
+                                    <span>$</span>Donate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pets__slider__item">
+                        <div class="image__wrapper_opacity">
+                            <img src="../../assets/images/landing/PetsInZoo/monkey.png" 
+                            alt="Monkey" 
+                            class="pets__slider__item-image">
+                        </div>
+                        
+                        <div class="pets__slider__item__description">
+                            <p>
+                                Gorillas stick to a mainly 
+                                vegetarian diet, feeding on 
+                                stems, bamboo shoots and fruits.
+                            </p>
+                            <div class="slider__item__description_buttons">
+                                <a href="#!" id="play-watch-online">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/watchOnlinePlay.png" 
+                                    alt="Watch online">
+                                    watch online
+                                </a>
+                                <a href="#!" id="donate-button">
+                                    <span>$</span>Donate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pets__slider__item">
+                        <div class="image__wrapper_opacity">
+                            <img src="../../assets/images/landing/PetsInZoo/alligator.png" 
+                            alt="Alligator" 
+                            class="pets__slider__item-image">
+                        </div>
+                        
+                        <div class="pets__slider__item__description">
+                            <p>
+                                Their diets include prey 
+                                species that are abundant 
+                                and easily accessible.
+                            </p>
+                            <div class="slider__item__description_buttons">
+                                <a href="#!" id="play-watch-online">
+                                    <img src="../../assets/images/landing/firstscreen__gallery/watchOnlinePlay.png" 
+                                    alt="Watch online">
+                                    watch online
+                                </a>
+                                <a href="#!" id="donate-button">
+                                    <span>$</span>Donate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../../assets/icons/landing/vectorSlide.svg" 
+                        alt="Right" 
+                        class="pets__slider-vector">
+                </div>
+                <div class="slider-dark">
+                    <p class="slider__bottomside-count-current">01/<span>08</span></p>
+
+                    <input id="range3" 
+                        type="range" 
+                        value="1" 
+                        max="8" 
+                        min="1" 
+                        class="slider__range light">
+                </div>
+                <a href="pages/map/index.html" id="pets_link_map">
+                    <button class="pets__btn btn">
+                        Choose your favorite
+                    </button>
+                </a>
+            </div>
+
+            <div class="payNfeed">
+                <h2 class="payNfeed__title">Pay and feed</h2>
+                <p class="payNfeed__article">The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that you like.</p>
+                <div class="payNfeed__container">
+                    <div class="payNfeed__container__item">
+                        <img src="../../assets/icons/landing/payNfeed/cards.svg" 
+                             alt="You pay with a VISA card" 
+                             class="payNfeed__container-item-image">
+                        <p class="payNfeed__container-item-article">
+                             You pay with a VISA card
+                        </p>
+                    </div>
+                    <img src="../../assets/icons/landing/payNfeed/arrow.svg" 
+                         alt="arrow" 
+                         class="payNfeed__container-item-arrow">
+                    <div class="payNfeed__container__item">
+                        <img src="../../assets/icons/landing/payNfeed/gates.svg" 
+                             alt="Payment goes to the Zoo" 
+                             class="payNfeed__container-item-image">
+                        <p class="payNfeed__container-item-article">
+                            Payment goes to the Zoo
+                        </p>
+                    </div>
+                    <img src="../../assets/icons/landing/payNfeed/arrow.svg" 
+                         alt="arrow" 
+                         class="payNfeed__container-item-arrow">
+                    <div class="payNfeed__container__item">
+                        <img src="../../assets/icons/landing/payNfeed/panda.svg" 
+                             alt="Panda gets the bamboo" 
+                             class="payNfeed__container-item-image">
+                        <p class="payNfeed__container-item-article">
+                            Panda gets the bamboo
+                        </p>
+                    </div>
+                </div>
+                <button class="payNfeed__btn btn">
+                    Donate
+                </button>
+            </div>
+
+            <div class="testimonials">
+                <h2 class="testimonials__title">Testimonials
+                </h2>
+
+                <div class="testimonials__slider">
+                    <img src="../../assets/icons/landing/vectorSlide.svg" 
+                         alt="Left" 
+                         class="testimonials__slider-vector leftVector">
+                        
+                    <div class="testimonials__slider__item">
+                        <img src="../../assets/images/landing/testimonials/nastyaS.png" 
+                             alt="Nastya Sidorova" 
+                             class="testimonials__slider__item-image">
+                        <h3 class="testimonials__slider__item-name">
+                            Nastya Sidorova
+                        </h3>
+                        <p class="testimonials__slider__item-article">
+                            As a voice for wildlife, we are devastated 
+                            by the impact of the 2020 Australian bushfires 
+                            on precious species and their habitat.
+                        </p>
+                    </div>
+                    
+                    <div class="testimonials__slider__item">
+                        <img src="../../assets/images/landing/testimonials/VladK.png" 
+                             alt="Vlad Kim" 
+                             class="testimonials__slider__item-image">
+                        <h3 class="testimonials__slider__item-name">
+                            Vlad Kim
+                        </h3>
+                        <p class="testimonials__slider__item-article">
+                            As a voice for wildlife, we are devastated 
+                            by the impact of the 2020 Australian bushfires 
+                            on precious species and their habitat.
+                        </p>
+                    </div>
+
+                    <img src="../../assets/icons/landing/vectorSlide.svg" 
+                         alt="Right" 
+                         class="testimonials__slider-vector">
+                    
+                </div>
+
+                <div class="slider-dark">
+                    <p class="slider__bottomside-count-current">01/<span>08</span></p>
+
+                    <input id="range4" 
+                           type="range" 
+                           value="1" 
+                           max="8" 
+                           min="1" 
+                           class="slider__range light">
+                </div>
+                <button class="testimonials__btn btn">
+                    Leave feedback
+                </button>
+
+            </div>
+
+            <div class="map">
+                <h2 class="map__title">Map</h2>
+                <div class="map__global">
+                    <img src="../../assets/images/landing/Map/map.png" 
+                         alt="Earth" 
+                         class="map__global-map">
+                    <div class="map__global-index-alligator">
+                        <img src="../../assets/images/landing/Map/alligator.png" 
+                        alt="Alligator">
+                        <div class="map__global-index_popup">
+                            <img src="../../assets/images/landing/Map/eaglePopUp.png" 
+                                 alt="Eagle">
+                            <h4>West End Bald Eagle</h4>
+                            <p>
+                                <span>Region:</span>
+                                on an island near Los Angeles
+                            </p>
+                            <p>
+                                <span>Population:</span>
+                                more than 270 pairs in 2013
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="map__global-index-eagle">
+                        <img src="../../assets/images/landing/Map/eagle.png" 
+                             alt="eagle"
+                             class="map__global-index_image">
+                        <div class="map__global-index_popup">
+                            <img src="../../assets/images/landing/Map/eaglePopUp.png" 
+                                 alt="Eagle">
+                            <h4>West End Bald Eagle</h4>
+                            <p>
+                                <span>Region:</span>
+                                on an island near Los Angeles
+                            </p>
+                            <p>
+                                <span>Population:</span>
+                                more than 270 pairs in 2013
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="map__global-index-monkey">
+                        <img src="../../assets/images/landing/Map/mokey.png" 
+                             alt="Monkey">
+                             <div class="map__global-index_popup">
+                                <img src="../../assets/images/landing/Map/eaglePopUp.png" 
+                                     alt="Eagle">
+                                <h4>West End Bald Eagle</h4>
+                                <p>
+                                    <span>Region:</span>
+                                    on an island near Los Angeles
+                                </p>
+                                <p>
+                                    <span>Population:</span>
+                                    more than 270 pairs in 2013
+                                </p>
+                            </div>
+                    </div>
+                    
+                    <div class="map__global-index-panda">
+                        <img src="../../assets/images/landing/Map/panda.png" 
+                             alt="panda">
+                             <div class="map__global-index_popup">
+                                <img src="../../assets/images/landing/Map/eaglePopUp.png" 
+                                     alt="Eagle">
+                                <h4>West End Bald Eagle</h4>
+                                <p>
+                                    <span>Region:</span>
+                                    on an island near Los Angeles
+                                </p>
+                                <p>
+                                    <span>Population:</span>
+                                    more than 270 pairs in 2013
+                                </p>
+                            </div>
+                    </div>
+                    
+                </div>
+                
+                <a href="pages/Zoos/panda/index.html">
+                    <button class="map__btn btn">
+                        <img src="../../assets/images/svg/btn-play.svg" 
+                             alt="watch online" 
+                             class="btn__play">
+                             watch online
+                    </button>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            
+            <div class="footer__wrapper">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__nav__logo__link" name="footer">
+                        <img src="../../assets/images/footer/logo-light.png" 
+                             alt="Watch your favorite animal online" 
+                             class="footer__nav__logo">
+                    </a>
+    
+                    <ul class="footer__nav__list">
+                        <li class="footer__nav__item">
+                            <a href="#" 
+                               class="footer__nav__link active">About</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="pages/Zoos/panda/index.html" 
+                               class="footer__nav__link">Zoos</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="pages/map/index.html" 
+                               class="footer__nav__link">Map</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp?node-id=0%3A1" 
+                               class="footer__nav__link">Design</a>
+                        </li>
+                    </ul>
+    
+                    <button class="footer__nav__btn btn">
+                        donate for volunteers
+                    </button>
+                </nav>
+    
+                <div class="footer__bottomside">
+                    <form action="#!" class="footer__contact-us">
+                        <h3 class="footer__contact-us-title">Contact us</h3>
+                        <input type="text" 
+                               placeholder="Name" 
+                               class="footer__contact-us-input">
+                        <input type="email" 
+                               placeholder="Email" 
+                               class="footer__contact-us-input">
+                        <fieldset>
+                            <legend>Please enter your message</legend>
+                            <textarea cols="45" 
+                                      rows="6"
+                                      maxlength="280"></textarea>
+                        </fieldset>
+                        <div class="checkbox">
+                            <input type="checkbox" 
+                                   id="checkbox1" 
+                                   class="footer__contact-us-checker">
+                            <label for="checkbox1"></label>
+                            <span>I agree to the processing of Personal Data</span>
+                        </div>
+                        <button class="footer__contact-us__button">Send 
+                            <img src="../../assets/icons/landing/arrowFooter.svg" 
+                                 alt="Send">
+                        </button>
+                    </form>
+    
+                    <div class="footer_adress">
+                        <h3 class="footer_adress__title">ZOO Online Centre</h3>
+                        <div class="block-articles">
+                            <p class="footer_adress__article">
+                                132, Address District, Street</p>
+                            <p class="footer_adress__article1">
+                                Open Daily 10:00 am - 5:00 pm</p>
+                        </div>
+
+                        <div class="block-articles">
+                            <p class="footer_adress__article"> 
+                                T(702) 163-3433</p>
+                            <p class="footer__adress__article1">
+                                zoo.online@gmail.com</p>
+                        </div>
+                        
+                        <ul class="footer__adress__social__links__nav">
+                            <li class="footer__adress__social__links__item">
+                                <a href="https://www.instagram.com/" 
+                                   class="footer__adress__social__link__link">
+                                   <img src="../../assets/images/svg/instagram.svg" 
+                                        alt="instagram">
+                                </a>
+                            </li>
+                            <li class="footer__adress__social__links__item">
+                                <a href="https://www.twitter.com/" 
+                                   class="footer__adress__social__link__link">
+                                   <img src="../../assets/images/svg/twitter.svg" 
+                                        alt="twitter">
+                                </a>
+                            </li>
+                            <li class="footer__adress__social__links__item">
+                                <a href="https://www.vk.com/" 
+                                   class="footer__adress__social__link__link">
+                                   <img src="../../assets/images/svg/vk.svg" 
+                                        alt="vk">
+                                </a>
+                            </li>
+                            <li class="footer__adress__social__links__item">
+                                <a href="https://www.youtube.com/" 
+                                   class="footer__adress__social__link__link">
+                                   <img src="../../assets/images/svg/youtube.svg" 
+                                        alt="youtube">
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__authors">
+                    <p>
+                        ©Noora Sagnayeva
+                    </p>
+                    <p>
+                        ©RSSchool and ©Yem Digital - 2021
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
