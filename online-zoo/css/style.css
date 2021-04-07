@@ -1360,6 +1360,16 @@ body {
   margin-bottom: 5px;
 }
 
+.footer__bottomside .footer_adress .footer_adress__article1 {
+  margin-bottom: 5px;
+}
+
+.footer__bottomside .footer_adress a {
+  text-decoration: none;
+  color: #FEFEFE;
+  margin-bottom: 5px;
+}
+
 .footer__bottomside .footer_adress .block-articles {
   margin-bottom: 22px;
 }
