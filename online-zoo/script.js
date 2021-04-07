@@ -215,12 +215,6 @@ sliderRange.oninput = function() {
     } 
 };
 
-// Navigation bar first element is active or not
-const navElem = document.getElementById("linkHeader1");
-navElem.addEventListener("mouseover", e => {
-    navElem.classList.toggle("active");
-});
-
 // Navigation switch theme
 const switcher = document.querySelector(".switcher");
 let darkTheme = false; // boolean var to track dark theme;

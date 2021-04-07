@@ -444,6 +444,7 @@ body {
 }
 
 .header__wrapper .header__nav .header__list .header__item .header__link.active {
+  cursor: default;
   font-weight: 900;
   border-bottom: 1px solid #333333;
   -webkit-transition: 0.01s all;
