@@ -298,6 +298,7 @@ body {
 }
 
 .header__wrapper .header__nav .header__list .header__item .header__link.active {
+  cursor: default;
   font-weight: 900;
   border-bottom: 1px solid #333333;
   -webkit-transition: 0.01s all;
@@ -748,6 +749,15 @@ body {
   margin-bottom: 5px;
 }
 
+.footer__bottomside .footer_adress .footer_adress__article1 {
+  margin-bottom: 5px;
+}
+
+.footer__bottomside .footer_adress a {
+  text-decoration: none;
+  color: #FEFEFE;
+}
+
 .footer__bottomside .footer_adress .block-articles {
   margin-bottom: 22px;
 }
@@ -759,6 +769,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 28px;
 }
 
 .footer__bottomside .footer__adress__social__links__nav .footer__adress__social__links__item {

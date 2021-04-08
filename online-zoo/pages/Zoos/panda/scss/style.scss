@@ -147,7 +147,7 @@ body {
   align-items: center;
   width: 209px;
   height: 600px;
-  margin: 65px 0 0 -5px;
+  margin: 65px 5px 0 -5px;
   .pets-slider__image {
     width: 108px;
     height: 108px;
@@ -437,6 +437,13 @@ body {
     .footer_adress__article {
       margin-bottom: 5px;
     }
+    .footer_adress__article1 {
+      margin-bottom: 5px;
+    }
+    a {
+      text-decoration: none;
+      color: #FEFEFE;
+    }
     .block-articles {
       margin-bottom: 22px;
     }
@@ -444,6 +451,7 @@ body {
   .footer__adress__social__links__nav {
     display: flex;
     align-items: center;
+    margin-top: 28px;
     .footer__adress__social__links__item {
       margin-right: 15px;
       &:last-child {
