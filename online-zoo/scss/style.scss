@@ -663,51 +663,103 @@ body {
       position: absolute;
     }
     .map__global-index-alligator {
-      position: absolute;
-      left: 590px;
-      top: 5055px;
+      .main__map-item__alligator {
+        position: absolute;
+        left: 590px;
+        top: 5055px;
+        &:hover {
+          cursor: pointer;
+        }
+        .img-pet {
+          position: absolute;
+          top: 13px;
+          right: 13px;
+        }
+      }
       &:hover {
         .map__global-index_popup {
           display: block;
+          left: 590px - 405px;
+          top: 5055px + 65px;
         }
       }
     }
     .map__global-index-eagle {
-      position: absolute;
-      left: 465px;
-      top: 5028px;
+      .main__map-item__eagle {
+        position: absolute;
+        left: 465px;
+        top: 5028px;
+        &:hover {
+          cursor: pointer;
+        }
+        .img-pet {
+          position: absolute;
+          top: 13px;
+          right: 13px;
+        }
+      }
       &:hover {
         .map__global-index_popup {
           display: block;
+          left: 465px - 405px;
+          top: 5028px + 65px;
         }
       }
     }
     .map__global-index-monkey {
-      position: absolute;
-      left: 915px;
-      top: 5143px;
+      .main__map-item__monkey {
+        position: absolute;
+        left: 915px;
+        top: 5143px;
+        &:hover {
+          cursor: pointer;
+        }
+        .img-pet {
+          position: absolute;
+          top: 13px;
+          right: 13px;
+        }
+      }
       &:hover {
         .map__global-index_popup {
           display: block;
+          left: 915px - 405px;
+          top: 5143px + 65px;
         }
       }
     }
     .map__global-index-panda {
-      position: absolute;
-      left: 1235px;
-      top: 5045px;
+      .main__map-item__panda {
+        position: absolute;
+        left: 1235px;
+        top: 5045px;
+        &:hover {
+          cursor: pointer;
+        }
+        .img-pet {
+          position: absolute;
+          top: 13px;
+          right: 13px;
+        }
+      }
       &:hover {
         .map__global-index_popup {
           display: block;
+          top: 5110px;
+          left: 830px;
         }
+      }
+    }
+    .index-pet {
+      &.active {
+        content: url(../assets/icons/map/index-active.png);
       }
     }
     .map__global-index_popup {
       display: none;
-      position: relative;
-      z-index: 50;
-      right: 390px;
-      bottom: 40px;
+      position: absolute;
+      z-index: 51;
+      margin-bottom: -1409px;
       background-color: #fefefe;
       box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
       border-radius: 8px;

@@ -1034,52 +1034,103 @@ body {
   position: absolute;
 }
 
-.map .map__global .map__global-index-alligator {
+.map .map__global .map__global-index-alligator .main__map-item__alligator {
   position: absolute;
   left: 590px;
   top: 5055px;
 }
 
-.map .map__global .map__global-index-alligator:hover .map__global-index_popup {
-  display: block;
+.map .map__global .map__global-index-alligator .main__map-item__alligator:hover {
+  cursor: pointer;
 }
 
-.map .map__global .map__global-index-eagle {
+.map .map__global .map__global-index-alligator .main__map-item__alligator .img-pet {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.map .map__global .map__global-index-alligator:hover .map__global-index_popup {
+  display: block;
+  left: 185px;
+  top: 5120px;
+}
+
+.map .map__global .map__global-index-eagle .main__map-item__eagle {
   position: absolute;
   left: 465px;
   top: 5028px;
 }
 
-.map .map__global .map__global-index-eagle:hover .map__global-index_popup {
-  display: block;
+.map .map__global .map__global-index-eagle .main__map-item__eagle:hover {
+  cursor: pointer;
 }
 
-.map .map__global .map__global-index-monkey {
+.map .map__global .map__global-index-eagle .main__map-item__eagle .img-pet {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.map .map__global .map__global-index-eagle:hover .map__global-index_popup {
+  display: block;
+  left: 60px;
+  top: 5093px;
+}
+
+.map .map__global .map__global-index-monkey .main__map-item__monkey {
   position: absolute;
   left: 915px;
   top: 5143px;
 }
 
-.map .map__global .map__global-index-monkey:hover .map__global-index_popup {
-  display: block;
+.map .map__global .map__global-index-monkey .main__map-item__monkey:hover {
+  cursor: pointer;
 }
 
-.map .map__global .map__global-index-panda {
+.map .map__global .map__global-index-monkey .main__map-item__monkey .img-pet {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.map .map__global .map__global-index-monkey:hover .map__global-index_popup {
+  display: block;
+  left: 510px;
+  top: 5208px;
+}
+
+.map .map__global .map__global-index-panda .main__map-item__panda {
   position: absolute;
   left: 1235px;
   top: 5045px;
 }
 
+.map .map__global .map__global-index-panda .main__map-item__panda:hover {
+  cursor: pointer;
+}
+
+.map .map__global .map__global-index-panda .main__map-item__panda .img-pet {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
 .map .map__global .map__global-index-panda:hover .map__global-index_popup {
   display: block;
+  top: 5110px;
+  left: 830px;
+}
+
+.map .map__global .index-pet.active {
+  content: url(../assets/icons/map/index-active.png);
 }
 
 .map .map__global .map__global-index_popup {
   display: none;
-  position: relative;
-  z-index: 50;
-  right: 390px;
-  bottom: 40px;
+  position: absolute;
+  z-index: 51;
+  margin-bottom: -1409px;
   background-color: #fefefe;
   -webkit-box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
           box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);

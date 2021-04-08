@@ -228,3 +228,18 @@ switcher.addEventListener("click", e => {
         darkTheme = false;
     }
 });
+
+// Map index active or not
+const indexElementMap = document.querySelectorAll('.index-pet');
+
+indexElementMap.forEach(el => {
+    
+    el.addEventListener("mouseover", e => {
+        el.classList.add("active");
+
+    });
+    el.addEventListener("mouseout", e => {
+        el.classList.remove("active");
+        
+    });
+});
