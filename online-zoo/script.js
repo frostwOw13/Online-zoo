@@ -57,7 +57,7 @@ const slideImage = function (num) {
                     textToPet.innerHTML = "Main live prey consists of medium sized mammals and birds such as rabbits";
                     linkToPet.href = "pages/Zoos/eagle/index.html";
                     break;
-                 case 2:
+                case 2:
                     if (prev === 0) {
                         addActiveSlide(num-1);
                         sliderContainer.style.left = '-3px';
