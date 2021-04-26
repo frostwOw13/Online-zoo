@@ -216,16 +216,68 @@ sliderRange.oninput = function() {
 };
 
 // Navigation switch theme
-const switcher = document.querySelector(".switcher");
+const switcher = document.getElementById("switch");
+// What's elements to change:
+
+const headerColor = document.querySelector('.header');
+const headerNavColor = document.querySelectorAll('.header__link');
+const headerLogo = document.querySelector('.header__logo');
+
+const middleContainerColor = document.querySelector('.middle-container');
+const sliderFour = document.querySelector('.slider-dark_four');
+
+const featuresColor = document.querySelector('.features');
+
+const petsColor = document.querySelector('.pets');
+const sliderEight = document.querySelectorAll('.slider-dark');
+
 let darkTheme = false; // boolean var to track dark theme;
 
 switcher.addEventListener("click", e => {
     if (darkTheme === false) {
-        switcher.src = "assets/images/switcher__theme_dark.png";
-        darkTheme = true;
+      document.body.style.color = '#FEFEFE';
+
+      headerColor.style.backgroundColor = '#333333';
+      headerLogo.src = 'assets/images/logo-dark.png';
+      headerNavColor.forEach(link => {
+        link.style.color = '#FEFEFE';
+      });
+      
+      middleContainerColor.style.backgroundColor = '#333333';
+      sliderFour.classList.remove('slider-dark_four');
+      sliderFour.classList.add('slider-light_four');
+
+      featuresColor.style.backgroundColor = '#4F4F4F';
+
+      petsColor.style.backgroundColor = '#333333';
+      sliderEight.forEach(slide => {
+        slide.classList.remove('slider-dark');
+        slide.classList.add('slider-light');
+      });
+      document.querySelector('.pets__btn').style.marginTop = '30px';
+      darkTheme = true;
     } else {
-        switcher.src = "assets/images/switcher__theme.png";
-        darkTheme = false;
+      document.body.style.color = '#333333';
+
+      headerColor.style.backgroundColor = '#FEFEFE';
+      headerLogo.src = 'assets/images/logo-light.png';
+      headerNavColor.forEach(link => {
+        link.style.color = '#333333';
+      });
+
+      middleContainerColor.style.backgroundColor = '#FEFEFE';
+      sliderFour.classList.remove('slider-light_four');
+      sliderFour.classList.add('slider-dark_four');
+
+      featuresColor.style.backgroundColor = '#f2f2f2';
+
+      petsColor.style.backgroundColor = '#FEFEFE';
+      sliderEight.forEach(slide => {
+        slide.classList.remove('slider-light');
+        slide.classList.add('slider-dark');
+      });
+      document.querySelector('.pets__btn').style.marginTop = '0';
+      darkTheme = false;
     }
 });
 
