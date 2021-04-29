@@ -253,7 +253,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #fefefe;
-  margin: 20px 0 5px 96px;
+  margin: 0 0 5px 96px;
 }
 
 .slider-light .slider__bottomside-count-current span {
@@ -846,6 +846,7 @@ body {
   bottom: 40px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .main__slider {
@@ -863,6 +864,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 360px;
+  overflow: hidden;
 }
 
 .main__slider .slider__topside .main__slider__bar {

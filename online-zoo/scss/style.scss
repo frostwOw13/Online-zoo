@@ -89,7 +89,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     color: #fefefe;
-    margin: 20px 0 5px 96px;
+    margin: 0 0 5px 96px;
     span {
       font-size: 14px;
       line-height: 16.61px;
@@ -612,6 +612,7 @@ body {
   bottom: 40px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .main__slider {
   display: flex;
@@ -619,6 +620,7 @@ body {
   .slider__topside {
     display: flex;
     margin-left: 360px;
+    overflow: hidden;
     .main__slider__bar {
       position: absolute;
       top: 595px + 87px;

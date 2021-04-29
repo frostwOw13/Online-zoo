@@ -217,8 +217,8 @@ sliderRange.oninput = function() {
 
 // Navigation switch theme
 const switcher = document.getElementById("switch");
-// What's elements to change:
 
+// What's elements to change:
 const headerColor = document.querySelector('.header');
 const headerNavColor = document.querySelectorAll('.header__link');
 const headerLogo = document.querySelector('.header__logo');
@@ -231,11 +231,26 @@ const featuresColor = document.querySelector('.features');
 const petsColor = document.querySelector('.pets');
 const sliderEight = document.querySelectorAll('.slider-dark');
 
+const payNfeedColor = document.querySelector('.payNfeed')
+const payNfeedPar = document.querySelectorAll('.payNfeed__container-item-article');
+
+const testimonialsColor = document.querySelector('.testimonials');
+const testimonialsSquaresColor = document.querySelectorAll('.testimonials__slider__item');
+const sliderLight = document.getElementById('sliderTest');
+
+const mapColor = document.querySelector('.map');
+const mapImg = document.querySelector('.map__global-map');
+const mapPopup = document.querySelectorAll('.map__global-index_popup');
+const mapPopUptext = document.querySelectorAll('.mapPopUptext');
+
 let darkTheme = false; // boolean var to track dark theme;
 
 switcher.addEventListener("click", e => {
     if (darkTheme === false) {
       document.body.style.color = '#FEFEFE';
+      document.querySelectorAll('.vector').forEach(e => {
+        e.src = 'assets/icons/landing/vectorSlide-dark.png'
+      })
 
       headerColor.style.backgroundColor = '#333333';
       headerLogo.src = 'assets/images/logo-dark.png';
@@ -255,9 +270,33 @@ switcher.addEventListener("click", e => {
         slide.classList.add('slider-light');
       });
       document.querySelector('.pets__btn').style.marginTop = '30px';
+
+      payNfeedColor.style.backgroundColor = '#4F4F4F';
+      payNfeedPar.forEach(e => {
+        e.style.color = '#FEFEFE';
+      })
+
+      testimonialsColor.style.backgroundColor = '#333333';
+      testimonialsSquaresColor.forEach(e => {
+        e.style.backgroundColor = '#3C3C3C'
+      })
+      sliderLight.style.marginBottom = '30px';
+
+      mapColor.style.backgroundColor = '#4F4F4F';
+      mapImg.src = 'assets/images/Landing/Map/map-dark.png';
+      mapPopup.forEach(e => {
+        e.style.backgroundColor = '#333333';
+      })
+      mapPopUptext.forEach(e => {
+        e.style.color = '#FEFEFE';
+      })
+
       darkTheme = true;
     } else {
       document.body.style.color = '#333333';
+      document.querySelectorAll('.vector').forEach(e => {
+        e.src = 'assets/icons/landing/vectorSlide.svg'
+      })
 
       headerColor.style.backgroundColor = '#FEFEFE';
       headerLogo.src = 'assets/images/logo-light.png';
@@ -277,6 +316,26 @@ switcher.addEventListener("click", e => {
         slide.classList.add('slider-dark');
       });
       document.querySelector('.pets__btn').style.marginTop = '0';
+
+      payNfeedColor.style.backgroundColor = '#FEFEFE';
+      payNfeedPar.forEach(e => {
+        e.style.color = '#4F4F4F';
+      })
+
+      testimonialsColor.style.backgroundColor = '#FEFEFE';
+      testimonialsSquaresColor.forEach(e => {
+        e.style.backgroundColor = '#FEFEFE'
+      })
+
+      mapColor.style.backgroundColor = '#F2F2F2';
+      mapImg.src = 'assets/images/Landing/Map/map.png';
+      mapPopup.forEach(e => {
+        e.style.backgroundColor = '#FEFEFE';
+      })
+      mapPopUptext.forEach(e => {
+        e.style.color = '#333333';
+      })
+
       darkTheme = false;
     }
 });
