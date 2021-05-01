@@ -99,7 +99,7 @@ body {
 }
 
 // Slider light theme
-.slider-light_four{
+.slider-light_four {
   margin-bottom: 30px;
   input[type="range"] {
     -webkit-appearance: none;
@@ -307,12 +307,12 @@ body {
   .header__switch__theme {
     z-index: 50;
     margin-bottom: 20px;
-    input[type=checkbox]{
+    input[type="checkbox"] {
       height: 0;
       width: 0;
       visibility: hidden;
     }
-    
+
     label {
       cursor: pointer;
       text-indent: -9999px;
@@ -323,9 +323,9 @@ body {
       border-radius: 190px;
       position: relative;
     }
-    
+
     label:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 5px;
       left: 6px;
@@ -335,17 +335,17 @@ body {
       border-radius: 90px;
       transition: 0.3s;
     }
-    
+
     input:checked + label {
       background: #4f4f4f;
     }
-    
+
     input:checked + label:after {
       left: calc(100% - 5px);
       transform: translateX(-100%);
       background: #1b1b1b;
     }
-    
+
     label:active:after {
       width: 20px;
     }
@@ -606,9 +606,9 @@ body {
   }
 }
 .slider__wrapper {
-  width: 945px;
+  width: 52.15vw;
   height: 352px;
-  left: 615px;
+  left: 32.1vw;
   bottom: 40px;
   position: relative;
   overflow: hidden;
@@ -620,7 +620,6 @@ body {
   .slider__topside {
     display: flex;
     margin-left: 360px;
-    overflow: hidden;
     .main__slider__bar {
       position: absolute;
       top: 595px + 87px;
@@ -629,14 +628,47 @@ body {
     .slider__container {
       display: flex;
       position: relative;
+      .slider__item-dots {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        top: 172px;
+        left: -100px;
+        div {
+          background-color: #fefefe;
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
+          margin-right: 5px;
+        }
+      }
+      .slider__item-dots1 {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        top: 172px;
+        left: 800px;
+        &.hidden {
+          display: none;
+        }
+        div {
+          background-color: #fefefe;
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
+          margin-right: 5px;
+        }
+      }
       .slider__item {
         z-index: 1;
-        margin-right: 49px;
+        margin-right: 51px;
         margin-top: 80px;
+        border-radius: 15px;
         .slider__item-image {
           width: 140px;
           filter: drop-shadow(5px 4px 50px rgba(152, 157, 198, 0.25));
           position: relative;
+          transition: 0.1s;
           &.active {
             transform: scale(1.75);
             margin: 0 46px 0 46px;
@@ -652,7 +684,7 @@ body {
       position: absolute;
       z-index: 49;
       top: 225px;
-      left: 206px;
+      left: 207px;
       color: #ffffff;
       p {
         width: 185px;
@@ -769,6 +801,7 @@ body {
   }
 }
 .pets {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -778,28 +811,36 @@ body {
     line-height: 56px;
     margin: 100px 0 34px 0;
   }
-  .pets__slider {
-    display: flex;
-    .pets__slider-vector {
-      height: 30px;
-      margin-top: 185px;
-      &.leftVector {
-        margin-right: 30px;
-      }
-      &:hover {
-        cursor: pointer;
-        opacity: 0.7;
-      }
+  .pets__slider-vector {
+    height: 30px;
+    position: absolute;
+    &.rightVector {
+      top: 375px;
+      right: 5%;
     }
+    &.leftVector {
+      top: 375px;
+      left: 5%;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  .pets-slider {
+    margin-bottom: 30px;
     .pets__slider__item {
-      margin-right: 30px;
-      margin-bottom: 30px;
-      width: 278px;
-      height: 399px;
+      &:last-child {
+        padding-right: 0;
+      }
       overflow: hidden;
       display: inline-block;
+      transition: ease 1s;
       .image__wrapper_opacity {
         border-radius: 7px;
+        width: 277px;
+        height: 399px;
         background: #000;
         overflow: hidden;
         .pets__slider__item-image {
@@ -832,9 +873,16 @@ body {
           }
         }
       }
-    }
-    .pets__slider-vector {
-      margin-bottom: 25px;
+      &.active {
+        .pets__slider__item__description {
+          top: -130px;
+        }
+        .image__wrapper_opacity {
+          .pets__slider__item-image {
+            opacity: 0.2;
+          }
+        }
+      }
     }
   }
   #pets_link_map {
