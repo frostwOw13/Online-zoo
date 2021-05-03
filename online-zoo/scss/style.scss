@@ -25,6 +25,7 @@ body {
 .wrapper__whole__page {
   margin: 0 auto;
   max-width: 1920px;
+  overflow: hidden;
 }
 
 // Overall styles
@@ -620,45 +621,64 @@ body {
   .slider__topside {
     display: flex;
     margin-left: 360px;
+    position: relative;
     .main__slider__bar {
       position: absolute;
-      top: 595px + 87px;
-      left: 44.2%;
+      top: 133px;
+      left: 30.8%;
+      width: 55vw;
     }
+    .slider__item-dots {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      top: 135px;
+      left: 670px;
+      transition: ease 1s all;
+      &.hidden {
+        display: none;
+      }
+      div {
+        background-color: #fefefe;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-right: 5px;
+        &:first-child {
+          position: relative;
+          width: 10px;
+          height: 10px;
+          top: 2.5px;
+        }
+      }
+    }
+    .slider__item-dots1 {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      top: 135px;
+      left: 1145px;
+      &.hidden {
+        display: none;
+      }
+      div {
+        background-color: #fefefe;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        margin-right: 5px;
+        &:last-child {
+          position: relative;
+          width: 10px;
+          height: 10px;
+          top: 2.5px;
+        }
+      }
+    }
+    
     .slider__container {
       display: flex;
       position: relative;
-      .slider__item-dots {
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        top: 172px;
-        left: -100px;
-        div {
-          background-color: #fefefe;
-          width: 15px;
-          height: 15px;
-          border-radius: 15px;
-          margin-right: 5px;
-        }
-      }
-      .slider__item-dots1 {
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        top: 172px;
-        left: 800px;
-        &.hidden {
-          display: none;
-        }
-        div {
-          background-color: #fefefe;
-          width: 15px;
-          height: 15px;
-          border-radius: 15px;
-          margin-right: 5px;
-        }
-      }
       .slider__item {
         z-index: 1;
         margin-right: 51px;
@@ -678,67 +698,71 @@ body {
             display: none;
           }
         }
-      }
-    }
-    .slider__item__description {
-      position: absolute;
-      z-index: 49;
-      top: 225px;
-      left: 207px;
-      color: #ffffff;
-      p {
-        width: 185px;
-        margin-bottom: 16px;
+        &.active {
+          .slider__item__description {
+            display: block;
+            position: relative;
+            z-index: 59;
+            color: #ffffff;
+            top: -62px;
+            left: 19px;
+            p {
+              width: 185px;
+              margin-bottom: 16px;
+            }
+            .slider__item__description_buttons {
+              display: flex;
+              align-items: center;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+              text-transform: uppercase;
+              #play-watch-online {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #4bd8b5;
+                margin-right: 8px;
+                img {
+                  padding: 6px 7px;
+                  border: solid 2px #4bd8b5;
+                  border-radius: 14px;
+                  margin-right: 2px;
+                }
+                &:hover {
+                  color: #6eebcb;
+                  cursor: pointer;
+                }
+              }
+              #donate-button {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #ffffff;
+                span {
+                  padding: 0 6px;
+                  border: solid 2px #ffffff;
+                  border-radius: 20px;
+                  margin-right: 3px;
+                  font-size: 18px;
+                  line-height: 21px;
+                }
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .slider__item__description {
+          display: none;
+        }
       }
     }
   }
 
   .slider__bottomside {
-    margin: -45px 0 0 1156px;
-  }
-}
-
-.slider__item__description_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  #play-watch-online {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #4bd8b5;
-    margin-right: 8px;
-    img {
-      padding: 6px 7px;
-      border: solid 2px #4bd8b5;
-      border-radius: 14px;
-      margin-right: 2px;
-    }
-    &:hover {
-      color: #6eebcb;
-      cursor: pointer;
-    }
-  }
-  #donate-button {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #ffffff;
-    span {
-      padding: 0 6px;
-      border: solid 2px #ffffff;
-      border-radius: 20px;
-      margin-right: 3px;
-      font-size: 18px;
-      line-height: 21px;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+    margin: -47px 0 0 60.5vw;
   }
 }
 // Firstscreen styles end
