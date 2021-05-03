@@ -991,7 +991,17 @@ body {
   margin-bottom: 16px;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons {
+.main__slider .slider__topside .slider__container .slider__item .slider__item__description {
+  display: none;
+  -webkit-transition: ease .2s all;
+  transition: ease .2s all;
+}
+
+.slider__bottomside {
+  margin: 10px 0 0 60.5vw;
+}
+
+.slider__item__description_buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1004,7 +1014,7 @@ body {
   text-transform: uppercase;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #play-watch-online {
+.slider__item__description_buttons #play-watch-online {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1016,19 +1026,19 @@ body {
   margin-right: 8px;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #play-watch-online img {
+.slider__item__description_buttons #play-watch-online img {
   padding: 6px 7px;
   border: solid 2px #4bd8b5;
   border-radius: 14px;
   margin-right: 2px;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #play-watch-online:hover {
+.slider__item__description_buttons #play-watch-online:hover {
   color: #6eebcb;
   cursor: pointer;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #donate-button {
+.slider__item__description_buttons #donate-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,7 +1049,7 @@ body {
   color: #ffffff;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #donate-button span {
+.slider__item__description_buttons #donate-button span {
   padding: 0 6px;
   border: solid 2px #ffffff;
   border-radius: 20px;
@@ -1048,18 +1058,8 @@ body {
   line-height: 21px;
 }
 
-.main__slider .slider__topside .slider__container .slider__item.active .slider__item__description .slider__item__description_buttons #donate-button:hover {
+.slider__item__description_buttons #donate-button:hover {
   cursor: pointer;
-}
-
-.main__slider .slider__topside .slider__container .slider__item .slider__item__description {
-  display: none;
-  -webkit-transition: ease .2s all;
-  transition: ease .2s all;
-}
-
-.slider__bottomside {
-  margin: 10px 0 0 60.5vw;
 }
 
 .middle-container {

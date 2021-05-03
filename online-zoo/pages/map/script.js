@@ -1,16 +1,3 @@
-// // Map index active or not
-// const indexElementMap = document.querySelectorAll('.index-pet');
-
-// indexElementMap.forEach(el => {
-    
-//     el.addEventListener("mouseover", e => {
-//         el.classList.add("active");
-//     });
-//     el.addEventListener("mouseout", e => {
-//         el.classList.remove("active");
-//     });
-// });
-
 // Header burger
 const burger = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.header__nav');

@@ -714,48 +714,7 @@ body {
               width: 185px;
               margin-bottom: 16px;
             }
-            .slider__item__description_buttons {
-              display: flex;
-              align-items: center;
-              font-size: 12px;
-              line-height: 14px;
-              text-align: center;
-              text-transform: uppercase;
-              #play-watch-online {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-                color: #4bd8b5;
-                margin-right: 8px;
-                img {
-                  padding: 6px 7px;
-                  border: solid 2px #4bd8b5;
-                  border-radius: 14px;
-                  margin-right: 2px;
-                }
-                &:hover {
-                  color: #6eebcb;
-                  cursor: pointer;
-                }
-              }
-              #donate-button {
-                display: flex;
-                align-items: center;
-                text-decoration: none;
-                color: #ffffff;
-                span {
-                  padding: 0 6px;
-                  border: solid 2px #ffffff;
-                  border-radius: 20px;
-                  margin-right: 3px;
-                  font-size: 18px;
-                  line-height: 21px;
-                }
-                &:hover {
-                  cursor: pointer;
-                }
-              }
-            }
+            
           }
         }
         .slider__item__description {
@@ -765,11 +724,51 @@ body {
       }
     }
   }
-
-  
 }
 .slider__bottomside {
   margin: 10px 0 0 60.5vw;
+}
+.slider__item__description_buttons {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  #play-watch-online {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4bd8b5;
+    margin-right: 8px;
+    img {
+      padding: 6px 7px;
+      border: solid 2px #4bd8b5;
+      border-radius: 14px;
+      margin-right: 2px;
+    }
+    &:hover {
+      color: #6eebcb;
+      cursor: pointer;
+    }
+  }
+  #donate-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    span {
+      padding: 0 6px;
+      border: solid 2px #ffffff;
+      border-radius: 20px;
+      margin-right: 3px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 // Firstscreen styles end
 .middle-container {
