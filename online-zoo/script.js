@@ -377,16 +377,16 @@ class SliderCarousel {
   }
 
   init() {
-    this.addGloSlide();
+    this.addSlide();
     this.addStyle();
     this.controlSlider();
   }
 
-  addGloSlide() {
-    this.main.classList.add('glo-slider')
-    this.wrap.classList.add('glo-slider__wrap');
+  addSlide() {
+    this.main.classList.add('slider')
+    this.wrap.classList.add('slider__wrap');
     for (const item of this.slides) {
-      item.classList.add('glo-slider__item')
+      item.classList.add('slider__item')
     }
   }
 
@@ -394,19 +394,19 @@ class SliderCarousel {
     const style = document.createElement('style');
     style.id = 'sliderCarousel-style';
     style.textContent = `
-    .glo-slider {
+    .slider {
       width: 1201px !important;
       overflow: hidden !important;
       margin: 0 auto;
     }
 
-    .glo-slider__wrap {
+    .slider__wrap {
       display: flex !important;
       transition: transform .5s !important;
       will-change: transform !important;
     }
 
-    .glo-slider__item {
+    .slider__item {
       padding-right: 30px;
       flex: 0 0 ${this.options.widthSlide}% !important;
       width: 278px !important;
@@ -415,8 +415,6 @@ class SliderCarousel {
     `
     document.head.appendChild(style);
   }
-
-
 
   controlSlider() {
     this.prev.addEventListener('click', this.prevSlider.bind(this));

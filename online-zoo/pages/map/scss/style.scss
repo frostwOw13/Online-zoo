@@ -67,6 +67,48 @@ body {
   }
 }
 
+// Slider light
+.slider-light {
+  margin-bottom: 30px;
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 245px;
+  }
+  input[type="range"]:focus {
+    outline: none;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #bdbdbd;
+    border: 0px solid #000101;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 10px;
+    width: 30px;
+    background: #FEFEFE;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3px;
+  }
+  .slider__bottomside-count-current {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FEFEFE;
+    margin: 0 0 11px 96px;
+    span {
+      font-size: 14px;
+      line-height: 16.61px;
+      color: #bdbdbd;
+    }
+  }
+}
+
 //Button for light theme--------------------------------------------------
 .btn {
   border: none;
@@ -100,13 +142,14 @@ body {
   margin: 0 18.8vw;
 }
 
-// Header styles start----------------------------------------------------
+// Header styles start
 .header {
   width: 100%;
   top: 0;
   left: 0;
   position: relative;
-  z-index: 50;
+  z-index: 30;
+  background-color: #fefefe;
   box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .header:before {
@@ -116,7 +159,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fefefe;
   z-index: 2;
 }
 
@@ -124,6 +166,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 50;
   justify-content: space-between;
   .header__body__h1_onlinezoo {
     display: none;
@@ -175,12 +218,12 @@ body {
   .header__switch__theme {
     z-index: 50;
     margin-bottom: 20px;
-    input[type=checkbox]{
+    input[type="checkbox"] {
       height: 0;
       width: 0;
       visibility: hidden;
     }
-    
+
     label {
       cursor: pointer;
       text-indent: -9999px;
@@ -191,9 +234,9 @@ body {
       border-radius: 190px;
       position: relative;
     }
-    
+
     label:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 5px;
       left: 6px;
@@ -203,22 +246,23 @@ body {
       border-radius: 90px;
       transition: 0.3s;
     }
-    
+
     input:checked + label {
       background: #4f4f4f;
     }
-    
+
     input:checked + label:after {
       left: calc(100% - 5px);
       transform: translateX(-100%);
       background: #1b1b1b;
     }
-    
+
     label:active:after {
       width: 20px;
     }
   }
 }
+
 @media (max-width: 1200px) {
   .header__wrapper {
     max-width: 1200px;
@@ -255,10 +299,12 @@ body {
   .header__wrapper {
     max-width: 640px;
     padding: 0 21px;
+    position: fixed;
+    background-color: #fefefe;
     .header__body {
       justify-content: flex-start;
       .header__logo__link {
-        margin-right: 50vw;
+        margin-right: 60vw;
       }
     }
     .header__burger {
@@ -268,7 +314,7 @@ body {
       height: 21px;
       position: relative;
       z-index: 3;
-      margin: 0 34px 0 0;
+      margin: 0 10vw 0 0;
     }
     .header__burger span {
       content: "";
@@ -434,6 +480,7 @@ body {
     }
   }
 }
+// Header styles end
 .main {
   max-width: 65.5vw;
 }
@@ -463,52 +510,80 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 48px;
+  position: relative;
   .main__slider-top {
-    display: flex;
-    .arrow {
-      &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-      }
-      margin-bottom: 47px;
-    }
-    .arrow-left {
-      margin-right: 36px;
-    }
-    .arrow-right {
-      transform: rotate(180deg);
-      margin-left: 10px;
-    }
-    .main__slider__image {
-      img {
-        width: 108px;
-        height: 108px;
-      }
-      position: relative;
-      margin-right: 30px;
-      &.active {
+    margin-left: 30px;
+    .main__slider-wrapper {
+      display: flex;
+      .main__slider__image {
         img {
-          width: 137px;
-          height: 137px;
-          position: relative;
-          bottom: 20px;
+          width: 108px;
+          height: 108px;
         }
-        margin-right: 5px;
-        margin-left: -25px;
-        padding: 10px;
-        &:after {
-          content: "";
-          background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
-          position: absolute;
-          height: 157px;
-          width: 157px;
-          top: -20px;
-          left: 0;
+        position: relative;
+        margin-right: 30px;
+        &.active {
+          img {
+            width: 137px;
+            height: 137px;
+            position: relative;
+            bottom: 20px;
+          }
+          margin-right: 5px;
+          margin-left: -25px;
+          padding: 10px;
+          &:after {
+            content: "";
+            background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
+            position: absolute;
+            height: 157px;
+            width: 157px;
+            top: -20px;
+            left: 0;
+          }
+        }
+        &:hover {
+          img {
+            width: 137px;
+            height: 137px;
+            position: relative;
+            bottom: 20px;
+          }
+          margin-right: 5px;
+          margin-left: -25px;
+          padding: 10px;
+          &:after {
+            content: "";
+            background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
+            position: absolute;
+            height: 157px;
+            width: 157px;
+            top: -20px;
+            left: 0;
+          }
         }
       }
     }
   }
+  .arrow {
+    position: relative;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+    margin-bottom: 47px;
+  }
+  .arrow-left {
+    right: 600px;
+    bottom: 125px;
+  }
+  .arrow-right {
+    transform: rotate(180deg);
+    left: 600px;
+    bottom: 200px;
+  }
   .main__slider-bottom {
+    margin-top: -160px;
     margin-right: 31px;
   }
 }
@@ -583,6 +658,9 @@ body {
   }
   .index-pet {
     &.active {
+      content: url(../../../assets/icons/map/index-active.png);
+    }
+    &:hover {
       content: url(../../../assets/icons/map/index-active.png);
     }
   }
