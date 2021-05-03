@@ -784,7 +784,7 @@ body {
 
 .main__slider .main__slider-top .main__slider-wrapper .main__slider__image.active:after {
   content: "";
-  background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
+  background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
   position: absolute;
   height: 157px;
   width: 157px;
@@ -807,7 +807,7 @@ body {
 
 .main__slider .main__slider-top .main__slider-wrapper .main__slider__image:hover:after {
   content: "";
-  background-image: url(../../../../assets/images/Zoos/aside-active-pet.png);
+  background-image: url(../../../assets/images/Zoos/aside-active-pet.png);
   position: absolute;
   height: 157px;
   width: 157px;
@@ -1586,7 +1586,7 @@ body {
     margin: 0 0 0 -5px;
   }
   .main__slider .main__slider-top .main__slider__image.active:after {
-    background-image: url(../../../../assets/images/Zoos/aside-active-pet320px.png);
+    background-image: url(../../../assets/images/Zoos/aside-active-pet320px.png);
     width: 85px;
     height: 85px;
     top: -15px;
