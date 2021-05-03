@@ -360,14 +360,16 @@ class SliderCarousel {
     wrap,
     next,
     prev,
-    inputRange,
+    range,
+    rangeHTML,
     slidesToShow = 4
   }) {
     this.main = document.querySelector(main);
     this.wrap = document.querySelector(wrap);
     this.next = document.querySelector(next);
     this.prev = document.querySelector(prev);
-    this.inputRange = document.querySelector(inputRange);
+    this.range = document.querySelector(range);
+    this.rangeHTML = document.querySelector(rangeHTML);
     this.slides = document.querySelector(wrap).children;
     this.slidesToShow = slidesToShow;
     this.options = {
@@ -383,10 +385,10 @@ class SliderCarousel {
   }
 
   addSlide() {
-    this.main.classList.add('slider')
-    this.wrap.classList.add('slider__wrap');
+    this.main.classList.add('new-slider')
+    this.wrap.classList.add('new-slider__wrap');
     for (const item of this.slides) {
-      item.classList.add('slider__item')
+      item.classList.add('new-slider__item')
     }
   }
 
@@ -394,19 +396,19 @@ class SliderCarousel {
     const style = document.createElement('style');
     style.id = 'sliderCarousel-style';
     style.textContent = `
-    .slider {
+    .new-slider {
       width: 1201px !important;
       overflow: hidden !important;
       margin: 0 auto;
     }
 
-    .slider__wrap {
+    .new-slider__wrap {
       display: flex !important;
       transition: transform .5s !important;
       will-change: transform !important;
     }
 
-    .slider__item {
+    .new-slider__item {
       padding-right: 30px;
       flex: 0 0 ${this.options.widthSlide}% !important;
       width: 278px !important;
@@ -419,6 +421,27 @@ class SliderCarousel {
   controlSlider() {
     this.prev.addEventListener('click', this.prevSlider.bind(this));
     this.next.addEventListener('click', this.nextSlider.bind(this));
+
+    this.range.addEventListener('input', this.rangeSlider.bind(this));
+  }
+
+  changeRangeHTML() {
+    this.rangeHTML.innerHTML = `0${this.range.value}/<span>08</span>`;
+  }
+
+  rangeSlider() {
+    this.options.position = this.range.value - 1;
+    for (const item of this.slides) {
+      item.classList.remove('active');
+    }
+    if (this.options.position <= 3) {
+      this.wrap.style.transform = `translateX(-${(this.options.position) * this.options.widthSlide}%)`;
+    }
+    if (this.options.position >= 4 && this.options.position <= 7) {
+      this.wrap.style.transform = `translateX(-${(this.options.position - 3)* this.options.widthSlide}%)`;
+    }
+    this.slides[this.options.position].classList.add('active');
+    this.changeRangeHTML();
   }
 
   prevSlider() {
@@ -428,10 +451,16 @@ class SliderCarousel {
         this.options.position = this.slides.length - this.slidesToShow;
         this.slides[this.slides.length - 1].classList.add('active');
         this.slides[0].classList.remove('active');
+
+        this.range.value = 8;
+        this.changeRangeHTML();
       } else {
         this.slides[this.slides.length - 1].classList.remove('active');
         this.slides[this.options.position + 1].classList.remove('active');
         this.slides[this.options.position].classList.add('active');
+
+        this.range.value = this.options.position + 1;
+        this.changeRangeHTML();
       }
       this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
     }
@@ -444,10 +473,17 @@ class SliderCarousel {
         this.options.position = 0;
         this.slides[this.slides.length - 1].classList.remove('active');
         this.slides[this.options.position].classList.add('active');
+
+        this.range.value = 1;
+        this.changeRangeHTML();
       } else {
         this.slides[0].classList.remove('active');
         this.slides[this.slides.length - this.slidesToShow + this.options.position - 2].classList.remove('active');
         this.slides[this.slides.length - this.slidesToShow + this.options.position - 1].classList.add('active');
+
+        console.log(this.options.position, this.range.value);
+        this.range.value = this.options.position + 4;
+        this.changeRangeHTML();
       }
       this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
     }
@@ -459,7 +495,8 @@ const carousel = new SliderCarousel({
   wrap: '.pets-slider__wrap',
   next: '.pets__slider-vector.rightVector',
   prev: '.pets__slider-vector.leftVector',
-  inputRange: '#range3',
+  range: '#range3',
+  rangeHTML: '.pets__slider__count',
   slidesToShow: 4,
 });
 
