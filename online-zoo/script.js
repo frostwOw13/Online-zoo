@@ -445,48 +445,90 @@ class SliderCarousel {
   }
 
   prevSlider() {
-    if (this.options.position >= 0) {
-      --this.options.position;
-      if (this.options.position < 0) {
-        this.options.position = this.slides.length - this.slidesToShow;
-        this.slides[this.slides.length - 1].classList.add('active');
-        this.slides[0].classList.remove('active');
+    --this.options.position;
+    if (this.options.position < 0) {
+      this.options.position = 7;
 
-        this.range.value = 8;
-        this.changeRangeHTML();
-      } else {
-        this.slides[this.slides.length - 1].classList.remove('active');
-        this.slides[this.options.position + 1].classList.remove('active');
-        this.slides[this.options.position].classList.add('active');
+      this.slides[0].classList.remove('active');
+      this.slides[this.options.position].classList.add('active');
+  
+      this.wrap.style.transform = `translateX(-${(this.options.position - 3) * this.options.widthSlide}%)`;
+      this.range.value = this.options.position + 1;
+      this.changeRangeHTML();
+    } else if (this.options.position >= 0 && this.options.position < 7) {
+      this.slides[this.options.position + 1]?.classList.remove('active');
+      this.slides[this.options.position].classList.add('active');
 
-        this.range.value = this.options.position + 1;
-        this.changeRangeHTML();
-      }
-      this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
+      this.wrap.style.transform = `translateX(-${(this.options.position - 3) * this.options.widthSlide}%)`;
+      this.range.value = this.options.position + 1;
+      this.changeRangeHTML();
     }
+    // if (this.options.position >= 0) {
+    //   --this.options.position;
+    //   if (this.options.position < 0) {
+    //     this.options.position = this.slides.length - this.slidesToShow;
+    //     this.slides[this.slides.length - 1].classList.add('active');
+    //     this.slides[0].classList.remove('active');
+
+    //     this.range.value = 8;
+    //     this.changeRangeHTML();
+    //   } else {
+    //     this.slides[this.slides.length - 1].classList.remove('active');
+    //     this.slides[this.options.position + 1].classList.remove('active');
+    //     this.slides[this.options.position].classList.add('active');
+
+    //     this.range.value = this.options.position + 1;
+    //     this.changeRangeHTML();
+    //   }
+    //   this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
+    // }
   }
 
   nextSlider() {
-    if (this.options.position <= this.slides.length - this.slidesToShow) {
-      ++this.options.position;
-      if (this.options.position > this.slides.length - this.slidesToShow) {
-        this.options.position = 0;
-        this.slides[this.slides.length - 1].classList.remove('active');
-        this.slides[this.options.position].classList.add('active');
-
-        this.range.value = 1;
-        this.changeRangeHTML();
-      } else {
-        this.slides[0].classList.remove('active');
-        this.slides[this.slides.length - this.slidesToShow + this.options.position - 2].classList.remove('active');
-        this.slides[this.slides.length - this.slidesToShow + this.options.position - 1].classList.add('active');
-
-        console.log(this.options.position, this.range.value);
-        this.range.value = this.options.position + 4;
-        this.changeRangeHTML();
-      }
+    ++this.options.position;
+    if (this.options.position < 5) {
+      this.slides[this.options.position - 1]?.classList.remove('active');
+      this.slides[this.options.position].classList.add('active');
+  
       this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
+      this.range.value = this.options.position + 1;
+      this.changeRangeHTML();
+    } else if (this.options.position >= 5 && this.options.position < 8) {
+      this.slides[this.options.position - 1]?.classList.remove('active');
+      this.slides[this.options.position].classList.add('active');
+
+      this.range.value = this.options.position + 1;
+      this.changeRangeHTML();
+    } else if (this.options.position > 7) {
+      this.options.position = 0;
+
+      this.slides[7].classList.remove('active');
+      this.slides[this.options.position].classList.add('active');
+
+      this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
+      this.range.value = this.options.position + 1;
+      this.changeRangeHTML();
     }
+    
+    // if (this.options.position <= this.slides.length - this.slidesToShow) {
+    //   ++this.options.position;
+    //   if (this.options.position > this.slides.length - this.slidesToShow) {
+    //     this.options.position = 0;
+    //     this.slides[this.slides.length - 1].classList.remove('active');
+    //     this.slides[this.options.position].classList.add('active');
+
+    //     this.range.value = 1;
+    //     this.changeRangeHTML();
+    //   } else {
+    //     this.slides[0].classList.remove('active');
+    //     this.slides[this.slides.length - this.slidesToShow + this.options.position - 2].classList.remove('active');
+    //     this.slides[this.slides.length - this.slidesToShow + this.options.position - 1].classList.add('active');
+
+    //     this.range.value = this.options.position + 4;
+    //     this.changeRangeHTML();
+    //   }
+    //   this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
+    // }
   }
 }
 
