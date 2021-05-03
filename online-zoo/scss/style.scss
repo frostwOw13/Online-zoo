@@ -620,8 +620,9 @@ body {
   flex-direction: column;
   .slider__topside {
     display: flex;
-    margin-left: 360px;
+    margin-left: 18.8vw;
     position: relative;
+    height: 315px;
     .main__slider__bar {
       position: absolute;
       top: 133px;
@@ -632,11 +633,12 @@ body {
       position: absolute;
       z-index: 1;
       display: flex;
-      top: 135px;
-      left: 670px;
+      top: 132px;
+      left: 35vw;
       transition: ease 1s all;
       &.hidden {
         display: none;
+        transition: ease 1s all;
       }
       div {
         background-color: #fefefe;
@@ -656,10 +658,11 @@ body {
       position: absolute;
       z-index: 1;
       display: flex;
-      top: 135px;
-      left: 1145px;
+      top: 132px;
+      left: 65vw;
       &.hidden {
         display: none;
+        transition: ease 1s all;
       }
       div {
         background-color: #fefefe;
@@ -683,22 +686,22 @@ body {
         z-index: 1;
         margin-right: 51px;
         margin-top: 80px;
-        border-radius: 15px;
         .slider__item-image {
           width: 140px;
           filter: drop-shadow(5px 4px 50px rgba(152, 157, 198, 0.25));
           position: relative;
-          transition: 0.1s;
-          &.active {
-            transform: scale(1.75);
-            margin: 0 46px 0 46px;
-            transition: 0.05s;
-          }
-          &.hidden {
-            display: none;
-          }
+          transition: 0.2s;
+          border-radius: 5px;
         }
         &.active {
+          .slider__item-image {
+            width: 140px;
+            filter: drop-shadow(5px 4px 50px rgba(152, 157, 198, 0.25));
+            position: relative;
+            margin: 0 46px 0 46px;
+            transition: 0.2s;
+            transform: scale(1.75);
+          }
           .slider__item__description {
             display: block;
             position: relative;
@@ -706,6 +709,7 @@ body {
             color: #ffffff;
             top: -62px;
             left: 19px;
+            transition: ease .2s all;
             p {
               width: 185px;
               margin-bottom: 16px;
@@ -756,14 +760,16 @@ body {
         }
         .slider__item__description {
           display: none;
+          transition: ease .2s all;
         }
       }
     }
   }
 
-  .slider__bottomside {
-    margin: -47px 0 0 60.5vw;
-  }
+  
+}
+.slider__bottomside {
+  margin: 10px 0 0 60.5vw;
 }
 // Firstscreen styles end
 .middle-container {

@@ -9,221 +9,6 @@ burger.addEventListener("click", (e) => {
   bodyLock.classList.toggle("lock");
 });
 
-// Slider
-const sliderRange = document.getElementById("range1");
-const currentSlide = document.querySelector(
-  ".slider__bottomside-count-current"
-);
-const sliderImage = document.querySelectorAll(".slider__item-image");
-const sliderContainer = document.querySelector(".slider__container");
-
-// Link to live broadcast
-const linkToPet = document.getElementById("play-watch-online");
-const textToPet = document.getElementById("slider__item__desc-p");
-
-const addActiveSlide = function (num) {
-  sliderImage[num].classList.add("active");
-};
-
-const hideSlide = function (num) {
-  sliderImage[num].classList.add("hidden");
-};
-
-const showSlide = function (num) {
-  sliderImage[num].classList.remove("hidden");
-};
-
-const removeActiveSlide = function (num) {
-  sliderImage[num].classList.remove("active");
-};
-
-const moveRightSlide = function (right) {
-  sliderContainer.style.right = "right";
-};
-
-const moveLeftSlide = function (left) {
-  sliderContainer.style.right = "left";
-};
-let prev = 2;
-
-// TODO: optimize the DRY principe in cases
-const slideImage = function (num) {
-  switch (num) {
-    case 1:
-      addActiveSlide(num - 1);
-      sliderContainer.style.left = "185px";
-      removeActiveSlide(num);
-      prev = 0;
-      hideSlide(num + 3);
-      textToPet.innerHTML =
-        "Main live prey consists of medium sized mammals and birds such as rabbits";
-      linkToPet.href = "pages/Zoos/eagle/index.html";
-      break;
-    case 2:
-      if (prev === 0) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-3px";
-        removeActiveSlide(num - 2);
-        prev = 2;
-        showSlide(num + 2);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "3px";
-        removeActiveSlide(num);
-        prev = 2;
-        showSlide(num - 2);
-        hideSlide(num + 3);
-      }
-      textToPet.innerHTML =
-        "Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.";
-      linkToPet.href = "pages/Zoos/panda/index.html";
-      break;
-    case 3:
-      if (prev === 2) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-50px";
-        removeActiveSlide(num - 2);
-        prev = 3;
-        hideSlide(num - 3);
-        showSlide(num + 2);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-50px";
-        removeActiveSlide(num);
-        prev = 3;
-        showSlide(num - 2);
-        hideSlide(num + 3);
-      }
-      textToPet.innerHTML =
-        "Gorillas stick to a mainly vegetarian diet, feeding on stems, bamboo shoots and fruits.";
-      linkToPet.href = "pages/Zoos/monkey/index.html";
-      break;
-    case 4:
-      if (prev === 3) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-97px";
-        removeActiveSlide(num - 2);
-        prev = 4;
-        hideSlide(num - 3);
-        showSlide(num + 2);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-97px";
-        removeActiveSlide(num);
-        prev = 4;
-        showSlide(num - 2);
-        hideSlide(num + 3);
-      }
-      textToPet.innerHTML =
-        "Their diets include prey species that are abundant and easily accessible.";
-      linkToPet.href = "pages/Zoos/alligator/index.html";
-      break;
-    case 5:
-      if (prev === 4) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-148px";
-        removeActiveSlide(num - 2);
-        prev = 5;
-        hideSlide(num - 3);
-        showSlide(num + 2);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-148px";
-        removeActiveSlide(num);
-        prev = 5;
-        showSlide(num - 2);
-      }
-      textToPet.innerHTML =
-        "Main live prey consists of medium sized mammals and birds such as rabbits";
-      linkToPet.href = "pages/Zoos/eagle/index.html";
-      break;
-    case 6:
-      if (prev === 5) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-197px";
-        removeActiveSlide(num - 2);
-        prev = 6;
-        hideSlide(num - 3);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-197px";
-        removeActiveSlide(num);
-        prev = 6;
-        showSlide(num - 2);
-      }
-      textToPet.innerHTML =
-        "Panda’s name is Bei Bei. He is 2 years old. Bei Bei is from China. He loves bamboos.";
-      linkToPet.href = "pages/Zoos/panda/index.html";
-      break;
-    case 7:
-      if (prev === 6) {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-247px";
-        removeActiveSlide(num - 2);
-        prev = 7;
-        hideSlide(num - 3);
-      } else {
-        addActiveSlide(num - 1);
-        sliderContainer.style.left = "-247px";
-        removeActiveSlide(num);
-        prev = 7;
-        showSlide(num - 2);
-      }
-      textToPet.innerHTML =
-        "Gorillas stick to a mainly vegetarian diet, feeding on stems, bamboo shoots and fruits.";
-      linkToPet.href = "pages/Zoos/monkey/index.html";
-      document.querySelector(".slider__item-dots1").classList.add("hidden");
-      break;
-    case 8:
-      addActiveSlide(num - 1);
-      sliderContainer.style.left = "-297px";
-      removeActiveSlide(num - 2);
-      prev = 8;
-      hideSlide(num - 3);
-      textToPet.innerHTML =
-        "Their diets include prey species that are abundant and easily accessible.";
-      linkToPet.href = "pages/Zoos/alligator/index.html";
-      document.querySelector(".slider__item-dots1").classList.remove("hidden");
-      break;
-  }
-};
-
-sliderRange.oninput = function () {
-  if (this.value <= 1) {
-    let num = 1;
-    currentSlide.innerHTML = "01/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 1 && this.value <= 2) {
-    let num = 2;
-    currentSlide.innerHTML = "02/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 2 && this.value <= 3) {
-    let num = 3;
-    currentSlide.innerHTML = "03/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 3 && this.value <= 4) {
-    let num = 4;
-    currentSlide.innerHTML = "04/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 4 && this.value <= 5) {
-    let num = 5;
-    currentSlide.innerHTML = "05/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 5 && this.value <= 6) {
-    let num = 6;
-    currentSlide.innerHTML = "06/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 6 && this.value <= 7) {
-    let num = 7;
-    currentSlide.innerHTML = "07/<span>08</span>";
-    slideImage(num);
-  } else if (this.value > 7) {
-    let num = 8;
-    currentSlide.innerHTML = "08/<span>08</span>";
-    slideImage(num);
-  }
-};
-
 // Navigation switch theme
 const switcher = document.getElementById("switch");
 
@@ -352,8 +137,132 @@ switcher.addEventListener("click", (e) => {
     darkTheme = false;
   }
 });
+// Slider firstscreen
+class SliderFirst {
+  constructor({
+    main,
+    wrap,
+    items,
+    range,
+    rangeHTML,
+    dots1,
+    dots2
+  }) {
+    this.main = document.querySelector(main);
+    this.wrap = document.querySelector(wrap);
+    this.slides = document.querySelectorAll(items);
+    this.range = document.querySelector(range);
+    this.rangeHTML = document.querySelector(rangeHTML);
+    this.dots1 = document.querySelector(dots1);
+    this.dots2 = document.querySelector(dots2)
+    this.position = 1;
+  }
 
-// Slide PETS IN ZOO 
+  init() {
+    this.controlSlider();
+    this.cursorPointer();
+  }
+
+  controlSlider() {
+    this.slides.forEach((slide, id) => {
+      slide.addEventListener('click', () => {
+        if (id === this.position + 1) {
+          this.next();
+        } else if (id === this.position - 1) {
+          this.prev();
+        }
+      })
+    })
+    this.range.addEventListener('input', this.rangeSlider.bind(this));
+  }
+
+  cursorPointer() {
+    this.slides.forEach(slide => {
+      slide.style.cursor = 'default';
+    })
+    console.log(this.position);
+    if (this.position < 1) {
+      this.slides[this.position + 1].style.cursor = 'pointer';
+    } else if (this.position > 6) {
+      this.slides[this.position - 1].style.cursor = 'pointer';
+    } else {
+      this.slides[this.position + 1].style.cursor = 'pointer';
+      this.slides[this.position - 1].style.cursor = 'pointer';
+    }
+  }
+
+  rangeSlider() {
+    this.position = this.range.value - 1;
+    for (const item of this.slides) {
+      item.classList.remove('active');
+    }
+    console.log(this.position);
+    if (this.position === 0) {
+      this.wrap.style.transform = `translateX(190px)`;
+    } else {
+      this.wrap.style.transform = `translateX(-${(this.position - 1) * 190}px)`;
+    }
+    
+
+    this.slides[this.position].classList.add('active');
+    this.changeRangeHTML();
+  }
+
+  changeRangeHTML() {
+    this.rangeHTML.innerHTML = `0${this.range.value}/<span>08</span>`;
+  }
+
+  prev() {
+    --this.position;
+    if (this.position === 0) {
+      this.slides[this.position].classList.add('active');
+      this.slides[this.position + 1].classList.remove('active');
+
+      this.wrap.style.transform = `translateX(190px)`;
+      this.dots1.classList.remove('hidden');
+      
+    } else {
+      this.slides[this.position].classList.add('active');
+      this.slides[this.position + 1].classList.remove('active');
+      this.dots2.classList.add('hidden')
+  
+      this.wrap.style.transform = `translateX(-${(this.position - 1) * 190}px)`;
+    }
+
+    this.range.value = this.position + 1;
+    this.changeRangeHTML();
+    this.cursorPointer();
+  }
+
+  next() {
+    ++this.position;
+    if (this.position === 7) {
+      this.dots2.classList.remove('hidden'); 
+    } else {
+      this.dots1.classList.add('hidden'); 
+    }
+    this.slides[this.position].classList.add('active');
+    this.slides[this.position - 1].classList.remove('active');
+    
+    this.wrap.style.transform = `translateX(-${(this.position - 1)* 190}px)`;
+    this.range.value = this.position + 1;
+    this.changeRangeHTML();
+    this.cursorPointer();
+  }
+}
+
+const sliderFirst = new SliderFirst({
+  main: '.slider__wrapper',
+  wrap: '.slider__container',
+  items: '.slider__item',
+  range: '#range1',
+  rangeHTML: '.slider__count',
+  dots1: '.slider__item-dots',
+  dots2: '.slider__item-dots1'
+})
+
+sliderFirst.init();
+// Slider PETS IN ZOO 
 class SliderCarousel {
   constructor({
     main,
@@ -463,25 +372,6 @@ class SliderCarousel {
       this.range.value = this.options.position + 1;
       this.changeRangeHTML();
     }
-    // if (this.options.position >= 0) {
-    //   --this.options.position;
-    //   if (this.options.position < 0) {
-    //     this.options.position = this.slides.length - this.slidesToShow;
-    //     this.slides[this.slides.length - 1].classList.add('active');
-    //     this.slides[0].classList.remove('active');
-
-    //     this.range.value = 8;
-    //     this.changeRangeHTML();
-    //   } else {
-    //     this.slides[this.slides.length - 1].classList.remove('active');
-    //     this.slides[this.options.position + 1].classList.remove('active');
-    //     this.slides[this.options.position].classList.add('active');
-
-    //     this.range.value = this.options.position + 1;
-    //     this.changeRangeHTML();
-    //   }
-    //   this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
-    // }
   }
 
   nextSlider() {
@@ -509,26 +399,6 @@ class SliderCarousel {
       this.range.value = this.options.position + 1;
       this.changeRangeHTML();
     }
-    
-    // if (this.options.position <= this.slides.length - this.slidesToShow) {
-    //   ++this.options.position;
-    //   if (this.options.position > this.slides.length - this.slidesToShow) {
-    //     this.options.position = 0;
-    //     this.slides[this.slides.length - 1].classList.remove('active');
-    //     this.slides[this.options.position].classList.add('active');
-
-    //     this.range.value = 1;
-    //     this.changeRangeHTML();
-    //   } else {
-    //     this.slides[0].classList.remove('active');
-    //     this.slides[this.slides.length - this.slidesToShow + this.options.position - 2].classList.remove('active');
-    //     this.slides[this.slides.length - this.slidesToShow + this.options.position - 1].classList.add('active');
-
-    //     this.range.value = this.options.position + 4;
-    //     this.changeRangeHTML();
-    //   }
-    //   this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
-    // }
   }
 }
 
