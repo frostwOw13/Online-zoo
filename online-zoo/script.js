@@ -199,8 +199,15 @@ class SliderFirst {
     console.log(this.position);
     if (this.position === 0) {
       this.wrap.style.transform = `translateX(190px)`;
+      this.dots1.classList.remove('hidden');
+      
+    } else if (this.position === 7) {
+      this.wrap.style.transform = `translateX(-${(this.position - 1) * 190}px)`;
+      this.dots2.classList.remove('hidden');
     } else {
       this.wrap.style.transform = `translateX(-${(this.position - 1) * 190}px)`;
+      this.dots1.classList.add('hidden');
+      this.dots2.classList.add('hidden');
     }
     
 
