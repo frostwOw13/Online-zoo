@@ -105,6 +105,28 @@ class Slider {
 
     this.range.addEventListener('input', this.rangeSlider.bind(this));
     this.mapSlider();
+    this.petsIconsListen();
+  }
+
+  petsIconsListen() {
+    for (let i = 0; i < this.slides.length; i++) {
+      this.slides[i].addEventListener('click', () => {
+        for (const slide of this.slides) {
+          slide.classList.remove('active');
+        }
+        this.mapIndexes.forEach((index) => {
+          index.classList.remove('active');
+        })
+        this.slides[i].classList.add('active');
+        this.mapIndexes[i]?.classList.add('active')
+
+        this.position = i;
+        this.range.value = i + 1;
+
+        this.changeRangeHTML();
+        this.addNewLink();
+      })
+    }
   }
 
   rangeSlider() {
@@ -216,7 +238,7 @@ const slider = new Slider({
   prev: '.arrow-left',
   range: '#range1',
   rangeHTML: '.slider__bottomside-count-current',
-  mapIndexes: '.index-pet',
+  mapIndexes: '.map-index',
   mapLink: '.main__map__link'
 })
 

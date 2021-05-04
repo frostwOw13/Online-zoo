@@ -880,6 +880,14 @@ body {
   right: 13px;
 }
 
+.main__map .main__map-item__alligator.active .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
+.main__map .main__map-item__alligator:hover .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
 .main__map .main__map-item__eagle {
   position: absolute;
   left: 25.6vw;
@@ -894,6 +902,14 @@ body {
   position: absolute;
   top: 13px;
   right: 13px;
+}
+
+.main__map .main__map-item__eagle.active .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
+.main__map .main__map-item__eagle:hover .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
 }
 
 .main__map .main__map-item__monkey {
@@ -912,6 +928,14 @@ body {
   right: 13px;
 }
 
+.main__map .main__map-item__monkey.active .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
+.main__map .main__map-item__monkey:hover .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
 .main__map .main__map-item__panda {
   position: absolute;
   left: 66vw;
@@ -928,16 +952,16 @@ body {
   right: 13px;
 }
 
+.main__map .main__map-item__panda.active .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
+.main__map .main__map-item__panda:hover .index-pet {
+  content: url(../../../assets/icons/map/index-active.png);
+}
+
 .main__map .main__map-btn {
   margin: 46px 0 100px 0;
-}
-
-.main__map .index-pet.active {
-  content: url(../../../assets/icons/map/index-active.png);
-}
-
-.main__map .index-pet:hover {
-  content: url(../../../assets/icons/map/index-active.png);
 }
 
 .footer {

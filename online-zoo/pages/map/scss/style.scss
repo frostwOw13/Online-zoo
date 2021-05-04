@@ -613,6 +613,16 @@ body {
       top: 13px;
       right: 13px;
     }
+    &.active {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
+    &:hover {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
   }
   .main__map-item__eagle {
     position: absolute;
@@ -625,6 +635,16 @@ body {
       position: absolute;
       top: 13px;
       right: 13px;
+    }
+    &.active {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
+    &:hover {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
     }
   }
   .main__map-item__monkey {
@@ -639,6 +659,16 @@ body {
       top: 13px;
       right: 13px;
     }
+    &.active {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
+    &:hover {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
   }
   .main__map-item__panda {
     position: absolute;
@@ -652,17 +682,19 @@ body {
       top: 13px;
       right: 13px;
     }
+    &.active {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
+    &:hover {
+      .index-pet {
+        content: url(../../../assets/icons/map/index-active.png);
+      }
+    }
   }
   .main__map-btn {
     margin: 46px 0 100px 0;
-  }
-  .index-pet {
-    &.active {
-      content: url(../../../assets/icons/map/index-active.png);
-    }
-    &:hover {
-      content: url(../../../assets/icons/map/index-active.png);
-    }
   }
 }
 // Map styles end ---------------------------------------------------
