@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0, 
+    maximum-scale=1.0, 
+    user-scalable=no"
+    />
+    <title>Map</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__body">
+          <a href="../../index.html" class="header__logo__link">
+            <img
+              src="../../assets/images/logo-light.png"
+              alt="Watch your favorite animal online"
+              class="header__logo"
+          /></a>
+          <h1 class="header__body__h1_onlinezoo">Online zoo</h1>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="../../index.html" class="header__link" id="linkHeader1"
+                  >About</a
+                >
+              </li>
+              <li class="header__item">
+                <a
+                  href="../Zoos/panda/index.html"
+                  class="header__link"
+                  id="linkHeader2"
+                  >Zoos</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link active" id="linkHeader3">Map</a>
+              </li>
+              <li class="header__item">
+                <a href="#footer" class="header__link" id="linkHeader4"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="header__item">
+                <a
+                  href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                  class="header__link"
+                  id="linkHeader5"
+                  >Design</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__switch__theme">
+            <input type="checkbox" id="switch" /><label for="switch"
+              >Toggle</label
+            >
+          </div>
+
+          <div class="header__burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-wrapper">
+      <div class="main">
+        <section class="main__text">
+          <h2 class="main__text-title">Choose your favorite</h2>
+          <p class="main__text-paragraph">
+            As a voice for wildlife, we are devastated by the impact of the 2020
+            Australian bushfires on precious species and their habitat, and we
+            are determined to assist in all aspects, including providing
+            veterinary support and raising much-needed emergency funds. Zoo
+            Online saves wildlife and inspires everyone to make conservation a
+            priority in their lives. Animals have the right to a pain-free and
+            happy life. They have equal claim to the resources of this planet,
+            and deserve a life of dignity and compassion.As a voice for
+            wildlife, we are devastated by the impact of the 2020 Australian
+            bushfires on precious species and their habitat.
+          </p>
+        </section>
+        <section class="main__slider">
+          <div class="main__slider-top">
+            <div class="main__slider-wrapper">
+              <a href="#!" class="main__slider__image" id="image1">
+                <img
+                  src="../../assets/images/map/monkey-slider.png"
+                  alt="Monkey"
+                />
+              </a>
+              <a href="#!" class="main__slider__image active" id="image2">
+                <img src="../../assets/images/map/panda-slider.png" alt="Panda" />
+              </a>
+              <a href="#!" class="main__slider__image" id="image3">
+                <img
+                  src="../../assets/images/map/alligator-slider.png"
+                  alt="Alligator"
+                />
+              </a>
+              <a href="#!" class="main__slider__image" id="image4">
+                <img src="../../assets/images/map/eagle-slider.png" alt="Eagle" />
+              </a>
+              <a href="#!" class="main__slider__image" id="image5">
+                <img src="../../assets/images/map/tiger-slider.png" alt="Tiger" />
+              </a>
+              <a href="#!" class="main__slider__image" id="image6">
+                <img
+                  src="../../assets/images/map/elephant-slider.png"
+                  alt="Elephant"
+                />
+              </a>
+              <a href="#!" class="main__slider__image" id="image7">
+                <img src="../../assets/images/map/lion-slider.png" alt="Lion" />
+              </a>
+              <a href="#!" class="main__slider__image" id="image8">
+                <img src="../../assets/images/map/zebra-slider.png" alt="Zebra" />
+              </a>
+            </div>
+          </div>
+          <img
+              src="../../assets/icons/map/Vector.svg"
+              alt=""
+              class="arrow arrow-left"
+            />
+            <img
+              src="../../assets/icons/map/Vector.svg"
+              alt=""
+              class="arrow arrow-right"
+            />
+
+          <div class="main__slider-bottom slider-dark">
+            <p class="slider__bottomside-count-current">02/<span>08</span></p>
+
+            <input
+              id="range1"
+              type="range"
+              value="2"
+              max="8"
+              min="1"
+              class="slider__range light"
+            />
+          </div>
+        </section>
+        <section class="main__map">
+          <img
+            src="../../assets/images/map/whole-map.png"
+            alt=""
+            class="main__map-img"
+          />
+          <div class="main__map-item__wrapper">
+            <div class="main__map-item__monkey map-index" title="Monkey">
+              <img
+                src="../../assets/icons/map/index.png"
+                alt=""
+                class="index-pet"
+              />
+              <img
+                src="../../assets/icons/map/monkey.png"
+                alt="Monkey"
+                class="img-pet"
+              />
+            </div>
+  
+            <div class="main__map-item__panda map-index" title="Panda">
+              <img
+                src="../../assets/icons/map/index.png"
+                alt=""
+                class="index-pet active"
+              />
+              <img
+                src="../../assets/icons/map/panda.png"
+                alt="Panda"
+                class="img-pet"
+              />
+            </div>
+            <div class="main__map-item__alligator map-index" title="Alligator">
+              <img
+                src="../../assets/icons/map/index.png"
+                alt=""
+                class="index-pet"
+              />
+              <img
+                src="../../assets/icons/map/alligator.png"
+                alt="Alligator"
+                class="img-pet"
+              />
+            </div>
+  
+            <div class="main__map-item__eagle map-index" title="Eagle">
+              <img
+                src="../../assets/icons/map/index.png"
+                alt=""
+                class="index-pet"
+              />
+              <img
+                src="../../assets/icons/map/eagle.png"
+                alt="Eagle"
+                class="img-pet"
+              />
+            </div>
+          </div>
+          
+          <a href="../Zoos/panda/index.html" class="main__map__link">
+            <button class="main__map-btn btn">
+              <img
+                src="../../assets/images/svg/btn-play.svg"
+                alt="watch online"
+                class="btn__play"
+              />
+              watch online
+            </button>
+          </a>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <nav class="footer__nav">
+          <a href="#" class="footer__nav__logo__link" name="footer">
+            <img
+              src="../../assets/images/footer/logo-light.png"
+              alt="Watch your favorite animal online"
+              class="footer__nav__logo"
+            />
+          </a>
+
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item">
+              <a href="../../index.html" class="footer__nav__link active"
+                >About</a
+              >
+            </li>
+            <li class="footer__nav__item">
+              <a href="../Zoos/panda/index.html" class="footer__nav__link"
+                >Zoos</a
+              >
+            </li>
+            <li class="footer__nav__item">
+              <a href="#" class="footer__nav__link">Map</a>
+            </li>
+            <li class="footer__nav__item">
+              <a
+                href="https://www.figma.com/file/HKt5Nlx0jghQtJp6jW9q8F/zooApp"
+                class="footer__nav__link"
+                >Design</a
+              >
+            </li>
+          </ul>
+
+          <button class="footer__nav__btn btn">donate for volunteers</button>
+        </nav>
+
+        <div class="footer__bottomside">
+          <form action="#!" class="footer__contact-us">
+            <h3 class="footer__contact-us-title">Contact us</h3>
+            <input
+              type="text"
+              placeholder="Name"
+              class="footer__contact-us-input"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="footer__contact-us-input"
+            />
+            <fieldset>
+              <legend>Please enter your message</legend>
+              <textarea cols="45" rows="6" maxlength="280"></textarea>
+            </fieldset>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                class="footer__contact-us-checker"
+              />
+              <label for="checkbox1"></label>
+              <span>I agree to the processing of Personal Data</span>
+            </div>
+            <button class="footer__contact-us__button">
+              Send
+              <img
+                src="../../assets/icons/landing/arrowFooter.svg"
+                alt="Send"
+              />
+            </button>
+          </form>
+
+          <div class="footer_adress">
+            <h3 class="footer_adress__title">ZOO Online Centre</h3>
+            <div class="block-articles">
+              <p class="footer_adress__article">
+                132, Address District, Street
+              </p>
+              <p class="footer_adress__article1">
+                Open Daily 10:00 am - 5:00 pm
+              </p>
+            </div>
+
+            <div class="block-articles">
+              <a class="footer_adress__article" href="tel:7021633433">
+                T(702) 163-3433</a
+              >
+              <a
+                class="footer_adress__article1"
+                href="mailto:zoo.online@gmail.com"
+              >
+                zoo.online@gmail.com</a
+              >
+            </div>
+
+            <ul class="footer__adress__social__links__nav">
+              <li class="footer__adress__social__links__item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer__adress__social__link__link"
+                >
+                  <img
+                    src="../../assets/images/svg/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="footer__adress__social__links__item">
+                <a
+                  href="https://www.twitter.com/"
+                  class="footer__adress__social__link__link"
+                >
+                  <img
+                    src="../../assets/images/svg/twitter.svg"
+                    alt="twitter"
+                  />
+                </a>
+              </li>
+              <li class="footer__adress__social__links__item">
+                <a
+                  href="https://www.vk.com/"
+                  class="footer__adress__social__link__link"
+                >
+                  <img src="../../assets/images/svg/vk.svg" alt="vk" />
+                </a>
+              </li>
+              <li class="footer__adress__social__links__item">
+                <a
+                  href="https://www.youtube.com/"
+                  class="footer__adress__social__link__link"
+                >
+                  <img
+                    src="../../assets/images/svg/youtube.svg"
+                    alt="youtube"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__authors">
+          <p>©Noora Sagnayeva</p>
+          <p>©RSSchool and ©Yem Digital - 2021</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
